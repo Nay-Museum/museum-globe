@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Museum Globe Prototype</title>
+    <link rel="stylesheet" href="css/style.css?v=20260607-controls">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-label="3D 유물 지도">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Museum Globe</p>
+            <h1>동시대 유물 지구본</h1>
+          </div>
+          <div class="period-hud" id="periodHud">12세기</div>
+        </div>
+
+        <div class="globe-wrap">
+          <label class="rotate-switch" for="rotateToggle">
+            <input id="rotateToggle" type="checkbox" checked>
+            <span class="switch-track" aria-hidden="true"><span></span></span>
+            <span>자동 회전</span>
+          </label>
+          <div id="globe" class="globe"></div>
+          <section class="globe-popover" id="globePopover" aria-live="polite" hidden></section>
+          <div class="empty-state" id="emptyState" hidden>이 시기에는 표시할 위치가 확정된 유물이 없습니다.</div>
+        </div>
+
+        <div class="timeline-panel" aria-label="세기 이동">
+          <button class="icon-btn" id="prevCentury" type="button" aria-label="이전 데이터 세기">‹</button>
+          <div class="timeline-main">
+            <div class="century-labels">
+              <span>5C</span>
+              <strong id="centuryLabel">12C</strong>
+              <span>19C</span>
+            </div>
+            <input id="centuryRange" type="range" min="5" max="19" value="12" step="1" aria-label="세기 선택">
+            <div class="tick-row" id="tickRow" aria-hidden="true"></div>
+          </div>
+          <button class="icon-btn" id="nextCentury" type="button" aria-label="다음 데이터 세기">›</button>
+        </div>
+      </section>
+
+      <aside class="side-panel" aria-label="필터와 유물 정보">
+        <section class="controls-block">
+          <div class="control-row">
+            <label for="searchInput">검색</label>
+            <input id="searchInput" type="search" placeholder="유물명, 한자, 재질">
+          </div>
+
+          <div class="segmented" aria-label="문화권 필터">
+            <button class="seg-btn active" type="button" data-culture="KR">한국</button>
+            <button class="seg-btn active" type="button" data-culture="CN">중국</button>
+          </div>
+
+          <div class="control-row">
+            <label for="categoryFilter">분류</label>
+            <select id="categoryFilter">
+              <option value="all">전체</option>
+              <option value="metalcraft">금속공예</option>
+              <option value="ceramic">도자</option>
+              <option value="painting">회화</option>
+            </select>
+          </div>
+
+          <div class="legend">
+            <span><i class="swatch kr"></i>한국 문화권</span>
+            <span><i class="swatch cn"></i>중국 문화권</span>
+            <span><i class="marker-sample uncertain"></i>추정 위치</span>
+          </div>
+        </section>
+
+        <section class="detail-card" id="detailCard" aria-live="polite">
+          <div class="detail-placeholder">
+            지구본의 마커 또는 비교 리스트의 유물을 선택하세요.
+          </div>
+        </section>
+
+        <section class="compare-panel">
+          <div class="panel-title">
+            <h2>동시대 비교</h2>
+            <span id="resultCount">0점</span>
+          </div>
+          <div class="compare-grid">
+            <div>
+              <h3>한국</h3>
+              <div id="krList" class="artifact-list"></div>
+            </div>
+            <div>
+              <h3>중국</h3>
+              <div id="cnList" class="artifact-list"></div>
+            </div>
+          </div>
+          <div class="unknown-panel">
+            <h3>위치 불명</h3>
+            <div id="unknownList" class="artifact-list compact"></div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="vendor/globe.gl.min.js"></script>
+    <script src="data/texture.js"></script>
+    <script src="data/museums.js?v=20260607-official"></script>
+    <script src="data/periods.js"></script>
+    <script src="data/artifacts.js?v=20260607-official"></script>
+    <script src="js/app.js?v=20260607-official-points2"></script>
+  </body>
+</html>
