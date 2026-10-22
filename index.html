@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Museum Globe Prototype</title>
-    <link rel="stylesheet" href="css/style.css?v=20260607-controls">
+    <link rel="stylesheet" href="css/style.css?v=20261022-about">
   </head>
   <body>
     <main class="app-shell">
@@ -14,7 +14,10 @@
             <p class="eyebrow">Museum Globe</p>
             <h1>동시대 유물 지구본</h1>
           </div>
-          <div class="period-hud" id="periodHud">12세기</div>
+          <div class="topbar-actions">
+            <a class="about-link" id="aboutLink" href="#about" lang="en">About</a>
+            <div class="period-hud" id="periodHud">12세기</div>
+          </div>
         </div>
 
         <div class="globe-wrap">
@@ -101,6 +104,62 @@
       </aside>
     </main>
 
+    <dialog class="about-dialog" id="aboutDialog" lang="en" aria-labelledby="aboutTitle">
+      <div class="about-header">
+        <div>
+          <p class="eyebrow">Museum Globe</p>
+          <h2 id="aboutTitle">About Museum Globe</h2>
+        </div>
+        <button class="popover-close" id="closeAbout" type="button" aria-label="Close About">×</button>
+      </div>
+      <div class="about-body">
+        <p>
+          Museum Globe is a prototype web map that places Korean and Chinese objects of the same period side by side.
+          This first version holds 1,125 records, all shown in the 12th-century view:
+          1,068 from the National Museum of Korea and 57 from the Palace Museum, Beijing.
+        </p>
+
+        <h3>Dates</h3>
+        <p>
+          Not every record carries an individual 12th-century date. 23 Korean records are dated to the 12th century
+          on the museum's page; the other 1,045 are Goryeo celadons whose pages give no century, placed in the
+          12th century for comparison. The 57 Chinese records are dated by dynasty (Northern Song, Southern Song or Song)
+          and trimmed to the 12th century, so some may fall outside it.
+        </p>
+
+        <h3>Sources and images</h3>
+        <p>
+          All records were collected from the official online collection pages of the two museums, and each record
+          links back to its source page. Images are loaded directly from the museums' websites. Images from the
+          National Museum of Korea are recorded as KOGL Type 1. Images from the Palace Museum are linked from its
+          official website; this dataset records no licence for them. Licences have not yet been checked image by image.
+        </p>
+
+        <h3>Records</h3>
+        <p>
+          Each object has structured fields for its name and its name in Chinese characters, date, dynasty, material,
+          category, holding museum, image licence and source. The records are a selected sample gathered by a script,
+          not a complete count of either collection.
+        </p>
+
+        <h3>Map positions</h3>
+        <p>
+          Places on the map are estimated locations assigned by period and culture. All Korean records are placed at
+          the Gangjin kiln area, a major centre of Goryeo celadon production. Chinese records are placed at the Song
+          capitals, Kaifeng (Northern Song) and Hangzhou (Southern Song), or at a general point in eastern China.
+          Points that share a location are spread out so each can be selected; the spread has no geographic meaning.
+          They are not yet object-by-object findspots or kiln sites, and refining them is the next step.
+        </p>
+
+        <h3>Status</h3>
+        <p>
+          Built in June 2026 by Nayun Kim as a self-directed exercise in digital archiving, using AI-assisted coding.
+          The map is being extended to the Joseon period and, on the Korean side, beyond ceramics to metalwork and painting.
+        </p>
+      </div>
+    </dialog>
+
+    <script src="js/about.js?v=20261022-about"></script>
     <script src="vendor/globe.gl.min.js"></script>
     <script src="data/texture.js"></script>
     <script src="data/museums.js?v=20260607-official"></script>
