@@ -21,3 +21,7 @@ __pycache__/
 coverage/
 playwright-report/
 test-results/
+
+# Review-only outputs (thumbnails and the local review page)
+review/thumbs/
+review/*.html

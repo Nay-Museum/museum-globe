@@ -163,7 +163,7 @@ function centuryLabel(yearStart, yearEnd) {
 // Classifies from the object's own title/medium text; null means "not plain white or blue-and-white".
 // Mixed decoration (blue with iron or copper red, enamels) and qingbai are left out on purpose.
 function wareFromText(text) {
-  if (/철화|진사|동화|상감|청채|동채|鐵畵|辰砂|五彩|粉彩|斗彩|釉里红|青白|qingbai|iron|copper|famille|enamel|polychrome|overglaze/i.test(text)) return null;
+  if (/철화|철채|진사|동화|상감|청채|동채|鐵畵|辰砂|彩|描金|塑贴|釉里红|青白|qingbai|iron|copper|famille|enamel|polychrome|overglaze|green glaze|celadon/i.test(text)) return null;
   if (/청화|靑畵|靑華|青花|blue[- ]and[- ]white|underglaze (?:cobalt )?blue|cobalt blue/i.test(text)) return "blue-and-white";
   if (/백자|白磁|白瓷|甜白|白釉|white porcelain|white ware|blanc de chine/i.test(text)) return "white";
   return null;

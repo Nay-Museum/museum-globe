@@ -3,6 +3,7 @@
     century: 12,
     cultures: new Set(["KR", "CN"]),
     category: "all",
+    ware: "all",
     search: "",
     selectedId: null
   };
@@ -13,6 +14,16 @@
     metalcraft: "금속공예",
     ceramic: "도자",
     painting: "회화"
+  };
+  const wareLabels = {
+    celadon: "청자",
+    white: "백자",
+    "blue-and-white": "청화백자"
+  };
+  const dateBasisLabels = {
+    "object-record": "소장품 기록의 연대",
+    dynasty: "왕조 범위로 추정",
+    "assigned-comparison": "연대 미상, 비교용 배치"
   };
   const pointCoordinates = buildPointCoordinates();
 
@@ -26,6 +37,7 @@
     nextCentury: document.getElementById("nextCentury"),
     searchInput: document.getElementById("searchInput"),
     categoryFilter: document.getElementById("categoryFilter"),
+    wareFilter: document.getElementById("wareFilter"),
     cultureButtons: Array.from(document.querySelectorAll("[data-culture]")),
     detailCard: document.getElementById("detailCard"),
     krList: document.getElementById("krList"),
@@ -49,7 +61,7 @@
     .pointRadius((d) => (d.id === state.selectedId ? 0.26 : 0.12))
     .pointResolution(24)
     .pointColor((d) => d.cultureRegion === "KR" ? "#b8324a" : "#216c7a")
-    .pointLabel((d) => `${d.name}<br>${d.dateLabel}`)
+    .pointLabel((d) => `${escapeHtml(d.name)}<br>${escapeHtml(d.dateLabel)}`)
     .pointsTransitionDuration(260)
     .onPointClick((artifact) => selectArtifact(artifact.id))
     .pointOfView({ lat: 34, lng: 118, altitude: 2.05 }, 0);
@@ -77,6 +89,21 @@
     globe.height(el.globe.clientHeight);
   });
 
+  // Records come from outside museum sites, so every value is escaped before it reaches innerHTML.
+  function escapeHtml(value) {
+    const entities = { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" };
+    return String(value ?? "").replace(/[&<>"']/g, (ch) => entities[ch]);
+  }
+
+  function safeUrl(value) {
+    try {
+      const url = new URL(value);
+      return url.protocol === "https:" ? url.href : "";
+    } catch {
+      return "";
+    }
+  }
+
   function centuryBounds(century) {
     return {
       start: (century - 1) * 100 + 1,
@@ -93,6 +120,7 @@
     if (includeCentury && !overlapsCentury(artifact, state.century)) return false;
     if (!state.cultures.has(artifact.cultureRegion)) return false;
     if (state.category !== "all" && artifact.category !== state.category) return false;
+    if (state.ware !== "all" && artifact.ware !== state.ware) return false;
 
     const term = state.search.trim().toLowerCase();
     if (!term) return true;
@@ -104,7 +132,9 @@
       artifact.dateLabel,
       artifact.dynasty,
       artifact.dynastyHanja,
-      artifact.origin.place
+      artifact.origin.place,
+      museums.get(artifact.holdingMuseumId)?.name,
+      museums.get(artifact.holdingMuseumId)?.nameHanja
     ].some((value) => String(value || "").toLowerCase().includes(term));
   }
 
@@ -123,7 +153,6 @@
     mappableArtifacts(artifacts).forEach((artifact) => {
       const key = [
         artifact.cultureRegion,
-        artifact.holdingMuseumId,
         artifact.origin.lat.toFixed(3),
         artifact.origin.lng.toFixed(3)
       ].join(":");
@@ -223,7 +252,9 @@
       const button = document.createElement("button");
       button.type = "button";
       button.className = `artifact-button ${artifact.id === state.selectedId ? "active" : ""}`;
-      button.innerHTML = `<strong>${artifact.name}</strong><small>${artifact.dateLabel} · ${categoryLabels[artifact.category] || artifact.category}</small>`;
+      const museum = museums.get(artifact.holdingMuseumId);
+      const kind = wareLabels[artifact.ware] || categoryLabels[artifact.category] || artifact.category;
+      button.innerHTML = `<strong>${escapeHtml(artifact.name)}</strong><small>${escapeHtml(artifact.dateLabel)} · ${escapeHtml(kind)} · ${escapeHtml(museum ? museum.name : artifact.holdingMuseumId)}</small>`;
       button.addEventListener("click", () => selectArtifact(artifact.id));
       container.appendChild(button);
     });
@@ -247,27 +278,30 @@
 
     const museum = museums.get(artifact.holdingMuseumId);
     const certaintyLabel = {
-      known: "확정 위치",
+      known: "소장처 기록 위치",
       "capital-fallback": "추정 위치",
       unknown: "위치 불명"
     }[artifact.origin.certainty];
 
+    const e = escapeHtml;
     el.detailCard.innerHTML = `
-      <img class="detail-image" src="${artifact.image}" alt="${artifact.name}">
+      <img class="detail-image" src="${e(safeUrl(artifact.image))}" alt="${e(artifact.name)}">
       <div class="detail-body">
-        <h2>${artifact.name}</h2>
-        <div class="hanja">${artifact.nameHanja}</div>
-        <p>${artifact.description}</p>
+        <h2>${e(artifact.name)}</h2>
+        <div class="hanja">${e(artifact.nameHanja)}</div>
+        <p>${e(artifact.description)}</p>
         <dl class="meta-grid">
-          <dt>연대</dt><dd>${artifact.dateLabel}</dd>
-          <dt>왕조</dt><dd>${artifact.dynasty}(${artifact.dynastyHanja})</dd>
-          <dt>재질</dt><dd>${artifact.material}</dd>
-          <dt>위치</dt><dd>${artifact.origin.place} · ${certaintyLabel}</dd>
-          <dt>소장처</dt><dd>${museum ? `${museum.name}(${museum.nameHanja})` : artifact.holdingMuseumId}</dd>
-          <dt>라이선스</dt><dd>${artifact.imageLicense}</dd>
-          <dt>크레딧</dt><dd>${artifact.imageCredit}</dd>
+          <dt>연대</dt><dd>${e(artifact.dateLabel)}</dd>
+          <dt>연대 근거</dt><dd>${e(dateBasisLabels[artifact.dateBasis] || artifact.dateBasis)}</dd>
+          <dt>왕조</dt><dd>${e(artifact.dynasty)}(${e(artifact.dynastyHanja)})</dd>
+          ${artifact.ware ? `<dt>종류</dt><dd>${e(wareLabels[artifact.ware])}</dd>` : ""}
+          <dt>재질</dt><dd>${e(artifact.material)}</dd>
+          <dt>위치</dt><dd>${e(artifact.origin.place)} · ${e(certaintyLabel)}</dd>
+          <dt>소장처</dt><dd>${e(museum ? `${museum.name}(${museum.nameHanja})` : artifact.holdingMuseumId)}</dd>
+          <dt>라이선스</dt><dd>${e(artifact.imageLicense)}</dd>
+          <dt>크레딧</dt><dd>${e(artifact.imageCredit)}</dd>
         </dl>
-        <a href="${artifact.source}" target="_blank" rel="noreferrer">출처 열기</a>
+        <a href="${e(safeUrl(artifact.source))}" target="_blank" rel="noreferrer">출처 열기</a>
       </div>
     `;
   }
@@ -281,29 +315,29 @@
 
     const museum = museums.get(artifact.holdingMuseumId);
     const certaintyLabel = {
-      known: "확정",
+      known: "기록",
       "capital-fallback": "추정",
       unknown: "불명"
     }[artifact.origin.certainty];
 
     el.globePopover.hidden = false;
     el.globePopover.innerHTML = `
-      <img class="popover-image" src="${artifact.image}" alt="${artifact.name}">
+      <img class="popover-image" src="${escapeHtml(safeUrl(artifact.image))}" alt="${escapeHtml(artifact.name)}">
       <div class="popover-body">
         <div class="popover-header">
           <div>
-            <h2>${artifact.name}</h2>
-            <div class="hanja">${artifact.nameHanja}</div>
+            <h2>${escapeHtml(artifact.name)}</h2>
+            <div class="hanja">${escapeHtml(artifact.nameHanja)}</div>
           </div>
           <button class="popover-close" id="closePopover" type="button" aria-label="유물 정보 닫기">×</button>
         </div>
         <div class="popover-meta">
-          <span><b>연대</b>${artifact.dateLabel}</span>
-          <span><b>재질</b>${artifact.material}</span>
-          <span><b>위치</b>${artifact.origin.place} · ${certaintyLabel}</span>
-          <span><b>소장처</b>${museum ? museum.name : artifact.holdingMuseumId}</span>
+          <span><b>연대</b>${escapeHtml(artifact.dateLabel)}</span>
+          <span><b>재질</b>${escapeHtml(artifact.material)}</span>
+          <span><b>위치</b>${escapeHtml(artifact.origin.place)} · ${escapeHtml(certaintyLabel)}</span>
+          <span><b>소장처</b>${escapeHtml(museum ? museum.name : artifact.holdingMuseumId)}</span>
         </div>
-        <a class="popover-link" href="${artifact.source}" target="_blank" rel="noreferrer">출처 열기</a>
+        <a class="popover-link" href="${escapeHtml(safeUrl(artifact.source))}" target="_blank" rel="noreferrer">출처 열기</a>
       </div>
     `;
 
@@ -354,6 +388,11 @@
 
   el.categoryFilter.addEventListener("change", (event) => {
     state.category = event.target.value;
+    render();
+  });
+
+  el.wareFilter.addEventListener("change", (event) => {
+    state.ware = event.target.value;
     render();
   });
 
