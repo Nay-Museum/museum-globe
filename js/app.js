@@ -10,21 +10,9 @@
 
   const artifacts = window.ARTIFACTS || [];
   const museums = new Map((window.MUSEUMS || []).map((museum) => [museum.id, museum]));
-  const categoryLabels = {
-    metalcraft: "금속공예",
-    ceramic: "도자",
-    painting: "회화"
-  };
-  const wareLabels = {
-    celadon: "청자",
-    white: "백자",
-    "blue-and-white": "청화백자"
-  };
-  const dateBasisLabels = {
-    "object-record": "소장품 기록의 연대",
-    dynasty: "왕조 범위로 추정",
-    "assigned-comparison": "연대 미상, 비교용 배치"
-  };
+  const i18n = window.I18N;
+  const t = i18n.t;
+  const tr = i18n.data;
   const pointCoordinates = buildPointCoordinates();
 
   const el = {
@@ -61,7 +49,7 @@
     .pointRadius((d) => (d.id === state.selectedId ? 0.26 : 0.12))
     .pointResolution(24)
     .pointColor((d) => d.cultureRegion === "KR" ? "#b8324a" : "#216c7a")
-    .pointLabel((d) => `${escapeHtml(d.name)}<br>${escapeHtml(d.dateLabel)}`)
+    .pointLabel((d) => `${escapeHtml(d.name)}<br>${escapeHtml(tr.dateLabel(d.dateLabel))}`)
     .pointsTransitionDuration(260)
     .onPointClick((artifact) => selectArtifact(artifact.id))
     .pointOfView({ lat: 34, lng: 118, altitude: 2.05 }, 0);
@@ -107,6 +95,13 @@
     }
   }
 
+  function museumName(id, withOriginal = false) {
+    const museum = museums.get(id);
+    if (!museum) return id;
+    if (i18n.lang === "en") return museum.nameEn || museum.name;
+    return withOriginal ? `${museum.name}(${museum.nameHanja})` : museum.name;
+  }
+
   function centuryBounds(century) {
     return {
       start: (century - 1) * 100 + 1,
@@ -137,7 +132,10 @@
       artifact.dynastyHanja,
       artifact.origin.place,
       museums.get(artifact.holdingMuseumId)?.name,
-      museums.get(artifact.holdingMuseumId)?.nameHanja
+      museums.get(artifact.holdingMuseumId)?.nameHanja,
+      museums.get(artifact.holdingMuseumId)?.nameEn,
+      tr.dateLabel(artifact.dateLabel),
+      tr.place(artifact.origin.place)
     ].some((value) => String(value || "").toLowerCase().includes(term));
   }
 
@@ -211,7 +209,7 @@
     el.emptyState.hidden = mappable.length > 0;
     el.centuryLabel.textContent = `${state.century}C`;
     el.periodHud.textContent = periodLabel(state.century);
-    el.resultCount.textContent = `${items.length}점`;
+    el.resultCount.textContent = t("count", { n: items.length });
     renderTicks();
     renderLists(items);
 
@@ -227,8 +225,9 @@
   }
 
   function periodLabel(century) {
-    const period = window.PERIODS[century] || { cn: "-", kr: "-" };
-    return `${century}세기 — 中 ${period.cn} ↔ 韓 ${period.kr}`;
+    const period = window.PERIODS[century] || { cn: "-", kr: "-", cnEn: "-", krEn: "-" };
+    const en = i18n.lang === "en";
+    return t("period", { c: century, ord: i18n.ordinal(century), cn: en ? period.cnEn : period.cn, kr: en ? period.krEn : period.kr });
   }
 
   function renderTicks() {
@@ -255,9 +254,8 @@
       const button = document.createElement("button");
       button.type = "button";
       button.className = `artifact-button ${artifact.id === state.selectedId ? "active" : ""}`;
-      const museum = museums.get(artifact.holdingMuseumId);
-      const kind = wareLabels[artifact.ware] || categoryLabels[artifact.category] || artifact.category;
-      button.innerHTML = `<strong>${escapeHtml(artifact.name)}</strong><small>${escapeHtml(artifact.dateLabel)} · ${escapeHtml(kind)} · ${escapeHtml(museum ? museum.name : artifact.holdingMuseumId)}</small>`;
+      const kind = t(artifact.ware || artifact.category);
+      button.innerHTML = `<strong>${escapeHtml(artifact.name)}</strong><small>${escapeHtml(tr.dateLabel(artifact.dateLabel))} · ${escapeHtml(kind)} · ${escapeHtml(museumName(artifact.holdingMuseumId))}</small>`;
       button.addEventListener("click", () => selectArtifact(artifact.id));
       container.appendChild(button);
     });
@@ -275,16 +273,13 @@
 
   function renderDetail(artifact) {
     if (!artifact) {
-      el.detailCard.innerHTML = `<div class="detail-placeholder">지구본의 마커 또는 비교 리스트의 유물을 선택하세요.</div>`;
+      el.detailCard.innerHTML = `<div class="detail-placeholder">${escapeHtml(t("detailPlaceholder"))}</div>`;
       return;
     }
 
-    const museum = museums.get(artifact.holdingMuseumId);
-    const certaintyLabel = {
-      known: "소장처 기록 위치",
-      "capital-fallback": "추정 위치",
-      unknown: "위치 불명"
-    }[artifact.origin.certainty];
+    const certaintyLabel = t(`certainty.${artifact.origin.certainty}`);
+    // Descriptions were written in Korean by the collectors; English mode relies on the translated fields instead.
+    const description = i18n.lang === "ko" ? artifact.description : "";
 
     const e = escapeHtml;
     el.detailCard.innerHTML = `
@@ -292,19 +287,19 @@
       <div class="detail-body">
         <h2>${e(artifact.name)}</h2>
         <div class="hanja">${e(artifact.nameHanja)}</div>
-        <p>${e(artifact.description)}</p>
+        ${description ? `<p>${e(description)}</p>` : ""}
         <dl class="meta-grid">
-          <dt>연대</dt><dd>${e(artifact.dateLabel)}</dd>
-          <dt>연대 근거</dt><dd>${e(dateBasisLabels[artifact.dateBasis] || artifact.dateBasis)}</dd>
-          <dt>왕조</dt><dd>${e(artifact.dynasty)}(${e(artifact.dynastyHanja)})</dd>
-          ${artifact.ware ? `<dt>종류</dt><dd>${e(wareLabels[artifact.ware])}</dd>` : ""}
-          <dt>재질</dt><dd>${e(artifact.material)}</dd>
-          <dt>위치</dt><dd>${e(artifact.origin.place)} · ${e(certaintyLabel)}</dd>
-          <dt>소장처</dt><dd>${e(museum ? `${museum.name}(${museum.nameHanja})` : artifact.holdingMuseumId)}</dd>
-          <dt>라이선스</dt><dd>${e(artifact.imageLicense)}</dd>
-          <dt>크레딧</dt><dd>${e(artifact.imageCredit)}</dd>
+          <dt>${e(t("date"))}</dt><dd>${e(tr.dateLabel(artifact.dateLabel))}</dd>
+          <dt>${e(t("dateBasis"))}</dt><dd>${e(t(`basis.${artifact.dateBasis}`))}</dd>
+          <dt>${e(t("dynasty"))}</dt><dd>${e(tr.dynasty(artifact.dynasty))}${i18n.lang === "en" ? " " : ""}(${e(artifact.dynastyHanja)})</dd>
+          ${artifact.ware ? `<dt>${e(t("ware"))}</dt><dd>${e(t(artifact.ware))}</dd>` : ""}
+          <dt>${e(t("material"))}</dt><dd>${e(tr.material(artifact.material))}</dd>
+          <dt>${e(t("place"))}</dt><dd>${e(tr.place(artifact.origin.place))} · ${e(certaintyLabel)}</dd>
+          <dt>${e(t("museum"))}</dt><dd>${e(museumName(artifact.holdingMuseumId, true))}</dd>
+          <dt>${e(t("licence"))}</dt><dd>${e(tr.licence(artifact.imageLicense))}</dd>
+          <dt>${e(t("credit"))}</dt><dd>${e(tr.credit(artifact.imageCredit))}</dd>
         </dl>
-        <a href="${e(safeUrl(artifact.source))}" target="_blank" rel="noreferrer">출처 열기</a>
+        <a href="${e(safeUrl(artifact.source))}" target="_blank" rel="noreferrer">${e(t("source"))}</a>
       </div>
     `;
   }
@@ -316,12 +311,7 @@
       return;
     }
 
-    const museum = museums.get(artifact.holdingMuseumId);
-    const certaintyLabel = {
-      known: "기록",
-      "capital-fallback": "추정",
-      unknown: "불명"
-    }[artifact.origin.certainty];
+    const certaintyLabel = t(`certaintyShort.${artifact.origin.certainty}`);
 
     el.globePopover.hidden = false;
     el.globePopover.innerHTML = `
@@ -332,15 +322,15 @@
             <h2>${escapeHtml(artifact.name)}</h2>
             <div class="hanja">${escapeHtml(artifact.nameHanja)}</div>
           </div>
-          <button class="popover-close" id="closePopover" type="button" aria-label="유물 정보 닫기">×</button>
+          <button class="popover-close" id="closePopover" type="button" aria-label="${escapeHtml(t("closeDetails"))}">×</button>
         </div>
         <div class="popover-meta">
-          <span><b>연대</b>${escapeHtml(artifact.dateLabel)}</span>
-          <span><b>재질</b>${escapeHtml(artifact.material)}</span>
-          <span><b>위치</b>${escapeHtml(artifact.origin.place)} · ${escapeHtml(certaintyLabel)}</span>
-          <span><b>소장처</b>${escapeHtml(museum ? museum.name : artifact.holdingMuseumId)}</span>
+          <span><b>${escapeHtml(t("date"))}</b>${escapeHtml(tr.dateLabel(artifact.dateLabel))}</span>
+          <span><b>${escapeHtml(t("material"))}</b>${escapeHtml(tr.material(artifact.material))}</span>
+          <span><b>${escapeHtml(t("place"))}</b>${escapeHtml(tr.place(artifact.origin.place))} · ${escapeHtml(certaintyLabel)}</span>
+          <span><b>${escapeHtml(t("museum"))}</b>${escapeHtml(museumName(artifact.holdingMuseumId))}</span>
         </div>
-        <a class="popover-link" href="${escapeHtml(safeUrl(artifact.source))}" target="_blank" rel="noreferrer">출처 열기</a>
+        <a class="popover-link" href="${escapeHtml(safeUrl(artifact.source))}" target="_blank" rel="noreferrer">${escapeHtml(t("source"))}</a>
       </div>
     `;
 
@@ -411,6 +401,12 @@
       }
       render();
     });
+  });
+
+  // Labels, lists and the open detail are drawn from the current language, so redraw on a switch.
+  i18n.onChange(() => {
+    globe.pointLabel(globe.pointLabel());
+    render();
   });
 
   render();

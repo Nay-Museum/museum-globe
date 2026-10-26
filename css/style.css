@@ -94,7 +94,38 @@ h1 {
 
 .topbar-links {
   display: flex;
+  align-items: center;
   gap: 6px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.lang-switch button {
+  padding: 3px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--cn);
+  color: #fff;
+}
+
+.lang-switch button:focus-visible {
+  outline: 2px solid rgba(33, 108, 122, 0.32);
+  outline-offset: 1px;
 }
 
 .about-link {

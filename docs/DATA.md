@@ -64,9 +64,10 @@
 
 ## 보조 데이터
 
-`window.MUSEUMS`의 전체 키는 `id`, `name`, `nameHanja`, `country`, `city`, `lat`, `lng`, `color`다.
+`window.MUSEUMS`의 전체 키는 `id`, `name`, `nameHanja`, `nameEn`, `country`, `city`, `lat`, `lng`, `color`다. `nameEn`은 영어 화면의 소장처 이름이다.
 `country`는 소장처 국가 `KR`·`CN`·`GB`·`US`이고, 해외 기관의 `nameHanja`에는 원어 공식 명칭을 넣는다. 위·경도는 박물관 위치이며 유물 제작·출토 좌표가 아니다.
-`window.PERIODS`는 5~19의 세기 키마다 `cn`, `kr` 문자열을 갖는 시대 표제 사전이다.
+`window.PERIODS`는 5~19의 세기 키마다 `cn`, `kr`(한국어 화면)과 `cnEn`, `krEn`(영어 화면) 문자열을 갖는 시대 표제 사전이다.
+영어 화면은 유물 이름과 설명문을 번역하지 않는다. 왕조·위치·재질·라이선스·크레딧·연대 표현만 `js/i18n.js`의 고정 어휘로 바꾸고, 한국어 설명문은 숨긴다.
 표제는 탐색 보조 정보이며 개별 유물의 편년이나 왕조 경계를 입증하지 않는다.
 `window.EARTH_TEXTURE`는 현재 `img/earth-blue-marble.jpg` 경로 문자열이다.
 

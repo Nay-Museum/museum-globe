@@ -39,6 +39,7 @@ node scripts/check.mjs
 - `js/app.js`는 데이터 문자열을 `escapeHtml()`로 이스케이프하고 이미지·출처 URL은 `safeUrl()`로 https만 허용한 뒤 `innerHTML`에 넣는다. 새 삽입 지점도 같은 규칙을 따른다.
 - `vendor/`의 압축 번들을 직접 편집하지 않는다. 갱신한다면 버전과 원본을 기록한다.
 - 앱/데이터/CSS를 바꾸면 `index.html`의 해당 `?v=`를 갱신한다. 관련 문서도 함께 맞춘다.
+- 화면 문구는 `js/i18n.js`의 `ko`·`en` 양쪽에 함께 넣는다. 데이터에 새 한국어 왕조·위치·재질·라이선스·크레딧 값이 생기면 같은 파일의 영어 어휘에도 추가한다.
 - 공개 주소 `https://nay-museum.github.io/museum-globe/`(특히 `#about`)는 CV에 실린 고정 링크다. 조직 이름(`Nay-Museum`)·저장소 이름(`museum-globe`) 변경, 저장소 이전·삭제, Pages 비활성화, `#about` 동작 제거를 하지 않는다.
 - 사용자 변경을 되돌리지 않고, 비밀키·토큰·`.env`·개인 설정을 커밋하지 않는다.
 
