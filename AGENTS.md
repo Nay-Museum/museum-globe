@@ -48,6 +48,7 @@ node scripts/check.mjs
 - KR 23점은 12세기 표기, 1,045점은 세기 미상이다. 중국도 왕조 분류를 비교용으로 잘라 쓴 값이다. 1,125점 전체의 개별 12세기 연대를 확정했다고 말하지 않는다.
 - 모든 `origin.certainty`가 `capital-fallback`이다. 나선형 점 분산도 실제 유적 위치가 아니다.
 - 수집 상한은 한국 검색 후보 2,400개이며 중국은 송대 목록의 세 필터다. 박물관 전체의 최대 검색 결과라고 주장하지 않는다.
+- `scripts/collect-porcelain-sample.mjs`는 네트워크 요청을 하지만 검토 파일만 쓴다. CI에는 넣지 않고, 검토 파일의 후보는 사람이 승인한 것만 `data/artifacts.js`에 합친다.
 - `scripts/collect-official-artifacts.mjs`는 **네트워크 대량 요청과 데이터 덮어쓰기**를 수행한다. 평소 실행·검증·CI에 넣지 않는다. 재수집 작업이라면 기존 데이터를 먼저 커밋하고, 출력 차이·출처·유물명·개수를 검토한다.
 - `imageLicense`의 일괄 값과 `holdingMuseumVerified: true`는 기존 수집기의 가정이다. 개별 검증 여부로 확대 해석하지 않는다.
 

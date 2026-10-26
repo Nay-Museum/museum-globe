@@ -80,6 +80,8 @@ node scripts/check.mjs
 git diff -- data/artifacts.js
 ```
 
+백자·청화백자 표본은 `node scripts/collect-porcelain-sample.mjs`로 모읍니다. 이 도구는 검토 파일(`review/porcelain-candidates.json`)만 쓰고 앱 데이터는 바꾸지 않습니다. 자세한 기준은 [데이터 설명](docs/DATA.md)에 있습니다.
+
 수집기는 전체 박물관 소장품을 전수 조사하지 않습니다. 검색 상한, 필터, 건너뛴 오류 때문에 재실행 개수와 순서는 바뀔 수 있습니다. 앱이나 데이터 파일을 바꾸면 `index.html`의 해당 `?v=` 값을 갱신하고 브라우저를 새로고침합니다.
 
 ## 배포 가이드

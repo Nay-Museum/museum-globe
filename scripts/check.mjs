@@ -19,7 +19,7 @@ const dataFiles = {
   "data/artifacts.js": "ARTIFACTS"
 };
 const browserScripts = ["vendor/globe.gl.min.js", ...Object.keys(dataFiles), "js/app.js"];
-const syntaxFiles = new Set([...browserScripts, "scripts/collect-official-artifacts.mjs", "scripts/check.mjs"]);
+const syntaxFiles = new Set([...browserScripts, "scripts/collect-official-artifacts.mjs", "scripts/collect-porcelain-sample.mjs", "scripts/check.mjs"]);
 const localAssets = new Set();
 const cultures = ["KR", "CN"];
 const categories = ["ceramic", "metalcraft", "painting"];
