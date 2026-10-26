@@ -9,8 +9,10 @@
 | --- | --- |
 | 전체 / 고유 ID | 1,125건 / 1,125개 |
 | 한국 / 중국 | 1,068건 / 57건 |
-| 소장처 ID | `nmk` 1,068건, `gugong-bj` 57건 |
+| 소장처 ID | `nmk` 1,068건, `gugong-bj` 57건 (`vam`, `met`은 등록만 되어 있고 아직 유물 없음) |
 | 분류 | `ceramic` 1,079건, `painting` 43건, `metalcraft` 3건 |
+| 연대 근거 `dateBasis` | `object-record` 23건(한국), `assigned-comparison` 1,045건(한국), `dynasty` 57건(중국) |
+| 유약 `ware` | `celadon` 1,077건(한국 1,068, 중국 9), `null` 48건(중국 회화 43·금속 3·균요 2) |
 | 위치 확실성 | 전부 `capital-fallback` |
 | `holdingMuseumVerified` | 전부 `true` |
 | 연대 필터 | 전부 12세기와 겹치며 다른 세기와는 겹치지 않음 |
@@ -32,13 +34,15 @@
 | `nameHanja` | 한자명 문자열; 확인되지 않으면 빈 문자열 허용 |
 | `holdingMuseumId` | `MUSEUMS.id` 참조; 현재 `nmk`, `gugong-bj` |
 | `holdingMuseumVerified` | 불리언; 아래의 제한된 의미에 유의 |
-| `cultureRegion` | 열거형 `KR`, `CN`; 현재 국적·소장 위치와 동일한 개념이 아님 |
+| `cultureRegion` | 열거형 `KR`, `CN`; 유물의 문화권. 소장처 국가와 별개(V&A·Met은 KR·CN 유물을 소장) |
 | `yearStart` | 정수, 필터용 시작 연도 |
 | `yearEnd` | 정수, 필터용 끝 연도; `yearStart <= yearEnd` |
 | `dateLabel` | 사람이 읽는 연대 표제; 원문을 그대로 옮긴 값이라고 보장하지 않음 |
+| `dateBasis` | 열거형 `object-record`(개별 기록에 연대 표기), `dynasty`(왕조·시대 범위에서 추정), `assigned-comparison`(연대 미상을 비교용으로 배치) |
 | `dynasty` | 왕조명 문자열; 현재 `고려`, `북송`, `남송`, `송` |
 | `dynastyHanja` | 비어 있지 않은 왕조 한자명 문자열; 현재 필수 |
 | `category` | 열거형 `metalcraft`, `ceramic`, `painting` |
+| `ware` | 열거형 `celadon`, `white`, `blue-and-white` 또는 `null`; `ceramic`만 값 가능. 이름·재질에 청자/靑磁/青瓷/青釉가 명시된 경우만 `celadon`, 나머지는 `null`(미분류) |
 | `material` | 재질 문자열; 수집기의 정규화·추정이 포함됨 |
 | `origin` | 아래 네 키를 갖는 위치 객체 |
 | `origin.lat` | 숫자 위도 -90~90; `unknown`이면 `null` |
@@ -48,11 +52,11 @@
 | `image` | 자격 증명 없는 절대 HTTPS URL; 외부 이미지 CDN 허용 |
 | `imageLicense` | 권리 관련 설명 문자열; 자유 텍스트이며 허가 증명 아님 |
 | `imageCredit` | 이미지 제공처·출처 표시 문자열 |
-| `source` | 자격 증명 없는 절대 HTTPS URL; `museum.go.kr`, `dpm.org.cn` 또는 각 하위 도메인 |
+| `source` | 자격 증명 없는 절대 HTTPS URL; `museum.go.kr`, `dpm.org.cn`, `vam.ac.uk`, `metmuseum.org` 또는 각 하위 도메인 |
 | `description` | 설명 문자열; 현재 수집기가 만든 문장 포함 |
 
 `known`은 개별 유물의 위치 근거가 있을 때만, `unknown`은 근거가 없을 때 사용한다.
-현재 검사는 `holdingMuseumId` 참조와 해당 박물관 `country`·`cultureRegion`의 일치를 요구한다.
+현재 검사는 `holdingMuseumId` 참조를 요구한다. 박물관 `country`와 유물 `cultureRegion`의 일치는 요구하지 않는다(해외 소장 유물).
 `capital-fallback`은 역사적으로 붙인 키 이름이며 수도만 뜻하지는 않는다.
 현재 강진 가마터와 중국 동부 대체점도 이 값에 포함된다.
 알 수 없는 위치를 임의의 도시나 숫자 0으로 채우지 말고 `unknown`·`null`로 남긴다.
@@ -61,7 +65,7 @@
 ## 보조 데이터
 
 `window.MUSEUMS`의 전체 키는 `id`, `name`, `nameHanja`, `country`, `city`, `lat`, `lng`, `color`다.
-`country`는 현재 `KR`·`CN`, 위·경도는 박물관 위치이며 유물 제작·출토 좌표가 아니다.
+`country`는 소장처 국가 `KR`·`CN`·`GB`·`US`이고, 해외 기관의 `nameHanja`에는 원어 공식 명칭을 넣는다. 위·경도는 박물관 위치이며 유물 제작·출토 좌표가 아니다.
 `window.PERIODS`는 5~19의 세기 키마다 `cn`, `kr` 문자열을 갖는 시대 표제 사전이다.
 표제는 탐색 보조 정보이며 개별 유물의 편년이나 왕조 경계를 입증하지 않는다.
 `window.EARTH_TEXTURE`는 현재 `img/earth-blue-marble.jpg` 경로 문자열이다.

@@ -37,6 +37,12 @@ const CN_ORIGINS = {
   }
 };
 
+// Mirrors the rule used to tag the committed snapshot: only an explicit celadon/greenware term sets ware.
+function wareFor(category, ...texts) {
+  if (category !== "ceramic") return null;
+  return /청자|靑磁|青瓷|青釉/.test(texts.join(" ")) ? "celadon" : null;
+}
+
 function decodeHtml(value) {
   return String(value || "")
     .replace(/<!HS>|<!HE>/g, "")
@@ -254,9 +260,11 @@ async function collectKoreanArtifacts() {
         yearStart: date.start,
         yearEnd: date.end,
         dateLabel,
+        dateBasis: isExactTwelfth ? "object-record" : "assigned-comparison",
         dynasty: "고려",
         dynastyHanja: "高麗",
         category,
+        ware: wareFor(category, name, nameHanja, material),
         material,
         origin: { ...KR_ORIGIN },
         image: card.image,
@@ -387,9 +395,11 @@ async function collectChineseArtifacts() {
       yearStart: date.yearStart,
       yearEnd: date.yearEnd,
       dateLabel: date.dateLabel,
+      dateBasis: "dynasty",
       dynasty: date.dynasty,
       dynastyHanja: date.dynastyHanja,
       category,
+      ware: wareFor(category, item.title),
       material: category === "ceramic" ? "도자기" : category === "metalcraft" ? "금속" : "종이/비단",
       origin: { ...date.origin },
       image: item.image,

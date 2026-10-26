@@ -24,6 +24,10 @@ const localAssets = new Set();
 const cultures = ["KR", "CN"];
 const categories = ["ceramic", "metalcraft", "painting"];
 const certainties = ["known", "capital-fallback", "unknown"];
+const museumCountries = ["KR", "CN", "GB", "US"];
+const wares = ["celadon", "white", "blue-and-white"];
+const dateBases = ["object-record", "dynasty", "assigned-comparison"];
+const officialHosts = ["museum.go.kr", "dpm.org.cn", "vam.ac.uk", "metmuseum.org"];
 
 function read(file) {
   try {
@@ -166,8 +170,8 @@ function httpsUrl(value, where, officialSource = false) {
     if (url.protocol !== "https:" || !url.hostname || url.username || url.password) {
       throw new Error("expected an absolute HTTPS URL without credentials");
     }
-    if (officialSource && !["museum.go.kr", "dpm.org.cn"].some((host) => url.hostname === host || url.hostname.endsWith(`.${host}`))) {
-      throw new Error("source hostname must be museum.go.kr, dpm.org.cn, or their subdomains");
+    if (officialSource && !officialHosts.some((host) => url.hostname === host || url.hostname.endsWith(`.${host}`))) {
+      throw new Error(`source hostname must be one of ${officialHosts.join(", ")} or their subdomains`);
     }
     // Images may use HTTPS CDNs, including DPM's myqcloud.com image host.
   } catch (error) {
@@ -183,7 +187,7 @@ for (const [index, museum] of museums.entries()) {
   if (!record(museum, where)) continue;
   strings(museum, ["id", "name", "nameHanja", "country", "city", "color"], where);
   uniqueId(museum, museumIds, where);
-  if (!cultures.includes(museum.country)) fail(`${where}.country`, "expected KR or CN");
+  if (!museumCountries.includes(museum.country)) fail(`${where}.country`, `expected ${museumCountries.join(", ")}`);
   coordinates(museum, where);
   museumById.set(museum.id, museum);
 }
@@ -209,14 +213,19 @@ const artifactIds = new Set();
 for (const [index, artifact] of artifacts.entries()) {
   const where = `data/artifacts.js[${index}] (${artifact?.id ?? "missing id"})`;
   if (!record(artifact, where)) continue;
-  strings(artifact, ["id", "name", "nameHanja", "holdingMuseumId", "cultureRegion", "dateLabel", "dynasty", "dynastyHanja", "category", "material", "image", "imageLicense", "imageCredit", "source", "description"], where);
+  strings(artifact, ["id", "name", "nameHanja", "holdingMuseumId", "cultureRegion", "dateLabel", "dateBasis", "dynasty", "dynastyHanja", "category", "material", "image", "imageLicense", "imageCredit", "source", "description"], where);
   uniqueId(artifact, artifactIds, where);
   if (!cultures.includes(artifact.cultureRegion)) fail(`${where}.cultureRegion`, "expected KR or CN");
   if (!categories.includes(artifact.category)) fail(`${where}.category`, `expected ${categories.join(", ")}`);
+  if (!dateBases.includes(artifact.dateBasis)) fail(`${where}.dateBasis`, `expected ${dateBases.join(", ")}`);
+  // ware is null when the record does not name a glaze type; only ceramics may carry one.
+  if (!Object.hasOwn(artifact, "ware")) fail(`${where}.ware`, "missing (use null when not identified)");
+  else if (artifact.ware !== null && !wares.includes(artifact.ware)) fail(`${where}.ware`, `expected null or ${wares.join(", ")}`);
+  else if (artifact.ware !== null && artifact.category !== "ceramic") fail(`${where}.ware`, "only ceramic records may set ware");
   if (typeof artifact.holdingMuseumVerified !== "boolean") fail(`${where}.holdingMuseumVerified`, "expected a Boolean");
   const museum = museumById.get(artifact.holdingMuseumId);
+  // cultureRegion describes the object, not the holder: the V&A and the Met hold KR and CN objects.
   if (!museum) fail(`${where}.holdingMuseumId`, `unknown museum ${JSON.stringify(artifact.holdingMuseumId)}`);
-  else if (museum.country !== artifact.cultureRegion) fail(`${where}.cultureRegion`, `must match museum country ${museum.country}`);
   for (const field of ["yearStart", "yearEnd"]) {
     if (!Number.isFinite(artifact[field]) || !Number.isInteger(artifact[field])) fail(`${where}.${field}`, "expected a finite integer");
   }
@@ -239,6 +248,8 @@ const missingCentury = artifacts.filter((item) => typeof item?.dateLabel === "st
 console.log(`Offline check: ${syntaxFiles.size} JavaScript syntax checks, ${localAssets.size} local assets, ${museums.length} museums, ${artifacts.length} artifacts.`);
 console.log(`Cultures: ${counts(cultures, (item) => item.cultureRegion)}. Categories: ${counts(categories, (item) => item.category)}.`);
 console.log(`Origins: ${counts(certainties, (item) => item.origin?.certainty)}.`);
+console.log(`Date basis: ${counts(dateBases, (item) => item.dateBasis)}. Ware: ${counts([...wares, null], (item) => item.ware)}.`);
+console.log(`Holding museums: ${counts(museums.map((museum) => museum.id), (item) => item.holdingMuseumId)}.`);
 console.warn(`WARN metadata: ${missingCentury} century-unknown records; the collector assigns artificial 12th-century comparison ranges to these records. Dynasty-based ranges are also approximations, not independently established dates.`);
 console.warn("WARN metadata: capital-fallback coordinates are estimates, not proven findspots; displayed marker offsets are not historical facts.");
 console.warn("WARN scope: offline structure/syntax only; no network, provenance, image-rights/license, or browser verification. holdingMuseumVerified is stored metadata, not independently verified here.");
