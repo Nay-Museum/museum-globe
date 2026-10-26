@@ -41,6 +41,7 @@ node scripts/check.mjs
 - 앱/데이터/CSS를 바꾸면 `index.html`의 해당 `?v=`를 갱신한다. 관련 문서도 함께 맞춘다.
 - 화면 문구는 `js/i18n.js`의 `ko`·`en` 양쪽에 함께 넣는다. 데이터에 새 한국어 왕조·위치·재질·라이선스·크레딧 값이 생기면 같은 파일의 영어 어휘에도 추가한다.
 - 공개 주소 `https://nay-museum.github.io/museum-globe/`(특히 `#about`)는 CV에 실린 고정 링크다. 조직 이름(`Nay-Museum`)·저장소 이름(`museum-globe`) 변경, 저장소 이전·삭제, Pages 비활성화, `#about` 동작 제거를 하지 않는다.
+- 코드·화면·글은 `LICENSE`의 All rights reserved 조건이다. 오픈소스 라이선스를 임의로 추가하거나 About·소개의 저작권 문단을 지우지 않는다.
 - 사용자 변경을 되돌리지 않고, 비밀키·토큰·`.env`·개인 설정을 커밋하지 않는다.
 
 ## 데이터 관련 함정

@@ -1,0 +1,36 @@
+Copyright (c) 2026 Nayun Kim. All rights reserved.
+
+Museum Globe (https://nay-museum.github.io/museum-globe/)
+
+The source code, page design, documentation and written text in this
+repository are the work of Nayun Kim. No licence is granted to copy,
+modify, distribute, publish or create derivative works from them, in
+whole or in part, without prior written permission from the copyright
+holder. Viewing the published site, and the viewing and forking of this
+public repository permitted by GitHub's Terms of Service, are not
+restricted by this notice.
+
+Material not covered by this notice
+-----------------------------------
+
+Collection records and images belong to the museums that hold the
+objects and remain subject to each museum's own terms:
+
+- National Museum of Korea: images recorded as KOGL Type 1
+  (Korea Open Government License, attribution required).
+- The Palace Museum, Beijing: images are linked from its official
+  website; no licence is recorded in this dataset.
+- Victoria and Albert Museum, London: images are shown under the V&A's
+  terms of use for non-commercial purposes.
+- The Metropolitan Museum of Art, New York: images designated public
+  domain (CC0) under its Open Access policy.
+
+Third-party files keep their own licences:
+
+- vendor/globe.gl.min.js: Globe.gl (https://github.com/vasturiano/globe.gl),
+  under its own licence.
+- img/earth-blue-marble.jpg: taken from the three-globe examples
+  (https://github.com/vasturiano/three-globe), under the terms of its source.
+
+For permission requests, contact the copyright holder through the
+repository owner on GitHub.
