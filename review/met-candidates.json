@@ -1,0 +1,3708 @@
+{
+  "collectedAt": "2026-10-26T16:03:53.313Z",
+  "note": "Review file only. Nothing here is in data/artifacts.js until a reviewer approves it.",
+  "options": {
+    "sources": [
+      "met"
+    ],
+    "perGroup": 30
+  },
+  "counts": {
+    "candidates": 65,
+    "excluded": 226,
+    "failures": 10,
+    "groups": {
+      "met CN blue-and-white": 30,
+      "met CN white": 15,
+      "met KR white": 10,
+      "met KR blue-and-white": 10
+    }
+  },
+  "candidates": [
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-39666",
+      "name": "Jar with dragon",
+      "source": "https://www.metmuseum.org/art/collection/search/39666",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1400,
+      "yearEnd": 1433,
+      "dateLabel": "명, early 15th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-32251-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: early 15th century; Ming dynasty (1368–1644), Xuande mark and period (1426–35).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "early 15th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42191",
+      "name": "Jar with Dragons and Floral Designs",
+      "source": "https://www.metmuseum.org/art/collection/search/42191",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1667,
+      "yearEnd": 1733,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted with cobalt blue under a transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-23919-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42204",
+      "name": "Vase with Flowering Plants and Birds",
+      "source": "https://www.metmuseum.org/art/collection/search/42204",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1667,
+      "yearEnd": 1733,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14605-070.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42210",
+      "name": "Pouring Vessel (Kendi) with Flowers and Fruits",
+      "source": "https://www.metmuseum.org/art/collection/search/42210",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1567,
+      "yearEnd": 1599,
+      "dateLabel": "명, late 16th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14606-007.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 16th century; Ming dynasty (1368–1644), Wanli period (1573–1620).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 16th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42242",
+      "name": "Vase in Meiping Shape",
+      "source": "https://www.metmuseum.org/art/collection/search/42242",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1600,
+      "yearEnd": 1699,
+      "dateLabel": "명·청, 17th century",
+      "dateBasis": "object-record",
+      "dynasty": "명·청",
+      "dynastyHanja": "明·淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with incised decoration under yellow glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14605-089.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 17th century; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "17th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42340",
+      "name": "Brush Pot with King Wen and the Scholar Jiang Taigong",
+      "source": "https://www.metmuseum.org/art/collection/search/42340",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1634,
+      "yearEnd": 1666,
+      "dateLabel": "명·청, mid-17th century",
+      "dateBasis": "object-record",
+      "dynasty": "명·청",
+      "dynastyHanja": "明·淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with incised decoration painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP342598.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: mid-17th century; Ming dynasty (1368–1644), Chongzhen period (1628–44).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "mid-17th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42498",
+      "name": "Monk’s cap ewer",
+      "source": "https://www.metmuseum.org/art/collection/search/42498",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1400,
+      "yearEnd": 1433,
+      "dateLabel": "명, early 15th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with incised hidden (anhua) decoration under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP343077.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: early 15th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "early 15th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42507",
+      "name": "Stem cup with dragons",
+      "source": "https://www.metmuseum.org/art/collection/search/42507",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1426,
+      "yearEnd": 1435,
+      "dateLabel": "명, 1426–1435",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/1991_253_40.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1426–1435; Ming dynasty (1368–1644), Xuande mark and period (1426–35).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1426–1435",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42509",
+      "name": "Dish with Blossoming Plum and Crescent Moon",
+      "source": "https://www.metmuseum.org/art/collection/search/42509",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1434,
+      "yearEnd": 1499,
+      "dateLabel": "명, mid- to late 15th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14609-102.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: mid- to late 15th century; Ming dynasty (1368–1644), Chenghua period (1465–87).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "mid- to late 15th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42511",
+      "name": "Jar with Scrolling Vine and Gourds",
+      "source": "https://www.metmuseum.org/art/collection/search/42511",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1400,
+      "yearEnd": 1599,
+      "dateLabel": "명, 15th–16th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP225475.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 15th–16th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "15th–16th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42532",
+      "name": "Dish with Flowers and Birds",
+      "source": "https://www.metmuseum.org/art/collection/search/42532",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1561,
+      "yearEnd": 1561,
+      "dateLabel": "명, dated 1561",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14606-009.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: dated 1561; Ming dynasty (1368–1644), Jiajing period (1522–66).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "dated 1561",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-42547",
+      "name": "Bodhidharma in meditation",
+      "source": "https://www.metmuseum.org/art/collection/search/42547",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1600,
+      "yearEnd": 1699,
+      "dateLabel": "명·청, 17th century",
+      "dateBasis": "object-record",
+      "dynasty": "명·청",
+      "dynastyHanja": "明·淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "White porcelain with transparent glaze (Dehua ware)",
+      "origin": {
+        "lat": 25.4919,
+        "lng": 118.2402,
+        "place": "덕화(德化) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP170200.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 17th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "17th century",
+        "sourcePlace": "Dehua ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-44745",
+      "name": "Bowl with pomegranates, lotus scrolls, and chrysanthemum petals",
+      "source": "https://www.metmuseum.org/art/collection/search/44745",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1400,
+      "yearEnd": 1433,
+      "dateLabel": "명, early 15th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP292418.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: early 15th century; Ming dynasty (1368–1644), Xuande mark and period (1426–35).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "early 15th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-44750",
+      "name": "Footed bowl with cranes and Eight Trigrams",
+      "source": "https://www.metmuseum.org/art/collection/search/44750",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1522,
+      "yearEnd": 1566,
+      "dateLabel": "명, 1522–1566",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/1991_253_49.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1522–1566; Ming dynasty (1368–1644), Jiajing mark and period (1522–66).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1522–1566",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-45879",
+      "name": "Water coupe with dragon medallions",
+      "source": "https://www.metmuseum.org/art/collection/search/45879",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1668,
+      "yearEnd": 1722,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with incised decoration under peachbloom glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/14_40_373_O2_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911), Kangxi mark and period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-46017",
+      "name": "Jar with four lugs",
+      "source": "https://www.metmuseum.org/art/collection/search/46017",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1500,
+      "yearEnd": 1599,
+      "dateLabel": "명, 16th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with incised decoration under white glaze (Zhangzhou ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/17_169_O1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 16th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "16th century",
+        "sourcePlace": "Zhangzhou ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-46051",
+      "name": "Gu-shaped vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46051",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1700,
+      "yearEnd": 1799,
+      "dateLabel": "청, 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "White porcelain with incised decoration (Dehua ware)",
+      "origin": {
+        "lat": 25.4919,
+        "lng": 118.2402,
+        "place": "덕화(德化) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/LC-29_100_250_whs-002.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 18th century; Qing dynasty (1644-1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "18th century",
+        "sourcePlace": "Dehua ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-460669",
+      "name": "Small wine pot or teapot",
+      "source": "https://www.metmuseum.org/art/collection/search/460669",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1662,
+      "yearEnd": 1722,
+      "dateLabel": "청, 1662–1722",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze blue.",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/rl/web-large/SLP1713-1.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1662–1722; 시대 표기 없음.",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1662–1722",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-46274",
+      "name": "Octagonal brush holder with plants and poems",
+      "source": "https://www.metmuseum.org/art/collection/search/46274",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1826,
+      "yearEnd": 1826,
+      "dateLabel": "청, 1826",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/79_2_186_O2_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1826; Qing dynasty (1644–1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1826",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-47955",
+      "name": "Cup with poem",
+      "source": "https://www.metmuseum.org/art/collection/search/47955",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1668,
+      "yearEnd": 1733,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "White porcelain (Dehua ware)",
+      "origin": {
+        "lat": 25.4919,
+        "lng": 118.2402,
+        "place": "덕화(德化) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/20841.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Dehua ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-47956",
+      "name": "Cup with poem",
+      "source": "https://www.metmuseum.org/art/collection/search/47956",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1668,
+      "yearEnd": 1733,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "White porcelain (Dehua ware)",
+      "origin": {
+        "lat": 25.4919,
+        "lng": 118.2402,
+        "place": "덕화(德化) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/20839.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Dehua ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-47957",
+      "name": "Cup with poem",
+      "source": "https://www.metmuseum.org/art/collection/search/47957",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1668,
+      "yearEnd": 1733,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "White porcelain (Dehua ware)",
+      "origin": {
+        "lat": 25.4919,
+        "lng": 118.2402,
+        "place": "덕화(德化) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/23444.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Dehua ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-48019",
+      "name": "Bowl with birds and flowers",
+      "source": "https://www.metmuseum.org/art/collection/search/48019",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1667,
+      "yearEnd": 1699,
+      "dateLabel": "청, late 17th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/28347.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th century; Qing dynasty (1644–1911), Kangxi mark and period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-48173",
+      "name": "Vase with floral and geometric ornaments",
+      "source": "https://www.metmuseum.org/art/collection/search/48173",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1767,
+      "yearEnd": 1799,
+      "dateLabel": "청, late 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue and light blue glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/79_2_528_O1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 18th century; Qing dynasty (1644–1911), Qianlong period (1736–95).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-48280",
+      "name": "Vase with flowers and rocks",
+      "source": "https://www.metmuseum.org/art/collection/search/48280",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1667,
+      "yearEnd": 1733,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue, with brown and blue glazes (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/79_2_287_O1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-48324",
+      "name": "Vase with ladies and flowers",
+      "source": "https://www.metmuseum.org/art/collection/search/48324",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1668,
+      "yearEnd": 1722,
+      "dateLabel": "청, late 17th–early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/29_149_3_O1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 17th–early 18th century; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 17th–early 18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-48559",
+      "name": "Gourd-shaped vase with gourds and bats",
+      "source": "https://www.metmuseum.org/art/collection/search/48559",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1700,
+      "yearEnd": 1733,
+      "dateLabel": "청, early 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP264293.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: early 18th century; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "early 18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-48641",
+      "name": "Bottle vase with floral scrolls",
+      "source": "https://www.metmuseum.org/art/collection/search/48641",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1700,
+      "yearEnd": 1799,
+      "dateLabel": "청, 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "White porcelain with incised decoration (Dehua ware)",
+      "origin": {
+        "lat": 25.4919,
+        "lng": 118.2402,
+        "place": "덕화(德化) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/LC-29_100_257_whs-002.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 18th century; Qing dynasty (1644–1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "18th century",
+        "sourcePlace": "Dehua ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-49857",
+      "name": "Vase with rabbits",
+      "source": "https://www.metmuseum.org/art/collection/search/49857",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1568,
+      "yearEnd": 1599,
+      "dateLabel": "명, late 16th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-26033-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 16th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 16th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-50247",
+      "name": "Vase with scholars and attendants",
+      "source": "https://www.metmuseum.org/art/collection/search/50247",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1450,
+      "yearEnd": 1550,
+      "dateLabel": "명, ca. 1500",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/17_30_3_O1.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: ca. 1500; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "ca. 1500",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-50278",
+      "name": "Pouring vessel with flowers and birds",
+      "source": "https://www.metmuseum.org/art/collection/search/50278",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1567,
+      "yearEnd": 1633,
+      "dateLabel": "명, late 16th–early 17th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP264298.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 16th–early 17th century; Ming dynasty (1368–1644), Wanli period (1573–1620).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 16th–early 17th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-50565",
+      "name": "Grotto with Guanyin, attendents, and arhats",
+      "source": "https://www.metmuseum.org/art/collection/search/50565",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1700,
+      "yearEnd": 1799,
+      "dateLabel": "청, 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/1973_155_6_F_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 18th century; Qing dynasty (1644–1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "18th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-50735",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/50735",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1662,
+      "yearEnd": 1722,
+      "dateLabel": "청, 1662–1722",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with blue and white glazes",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/65_86_48_182517.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1662–1722; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1662–1722",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-50765",
+      "name": "Ewer",
+      "source": "https://www.metmuseum.org/art/collection/search/50765",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1723,
+      "yearEnd": 1735,
+      "dateLabel": "청, 1723–1735",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with incised decoration under celadon glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-45699-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1723–1735; Qing dynasty (1644–1911), Yongzheng mark and period (1723–35).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1723–1735",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-52027",
+      "name": "Vase with decoration of dragons among clouds (one of a pair)",
+      "source": "https://www.metmuseum.org/art/collection/search/52027",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1723,
+      "yearEnd": 1735,
+      "dateLabel": "청, 1723–1735",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with incised decoration (anhua) under glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP307598.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1723–1735; Qing dynasty (1644–1911), Yongzheng mark and period (1723–35).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1723–1735",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-52028",
+      "name": "Vase with decoration of dragons among clouds (one of a pair)",
+      "source": "https://www.metmuseum.org/art/collection/search/52028",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1723,
+      "yearEnd": 1735,
+      "dateLabel": "청, 1723–1735",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with incised decoration (anhua) under glaze (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP307599.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1723–1735; Qing dynasty (1644–1911), Yongzheng mark and period (1723–35).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1723–1735",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-52077",
+      "name": "Covered box with scholar and attendents",
+      "source": "https://www.metmuseum.org/art/collection/search/52077",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1573,
+      "yearEnd": 1620,
+      "dateLabel": "명, 1573–1620",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/17_35_2ab_O1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1573–1620; Ming dynasty (1368–1644), Wanli mark and period (1573–1620).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1573–1620",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-52769",
+      "name": "Dish with floral scrolls and sanskrit",
+      "source": "https://www.metmuseum.org/art/collection/search/52769",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1573,
+      "yearEnd": 1620,
+      "dateLabel": "명, 1573–1620",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/23_251_2_O1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1573–1620; Ming dynasty (1368–1644), Wanli mark and period (1573–1620).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1573–1620",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-52794",
+      "name": "Bottle with Daoist immortal and tiger",
+      "source": "https://www.metmuseum.org/art/collection/search/52794",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1600,
+      "yearEnd": 1633,
+      "dateLabel": "명, early 17th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/18_56_70_O1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: early 17th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "early 17th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-52942",
+      "name": "Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/52942",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1662,
+      "yearEnd": 1722,
+      "dateLabel": "청, 1662–1722",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/24_80_557_01.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 1662–1722; Qing dynasty (1644–1911), Kangxi period (1662–1722).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "1662–1722",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-64484",
+      "name": "Bowl with children in a garden",
+      "source": "https://www.metmuseum.org/art/collection/search/64484",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1534,
+      "yearEnd": 1566,
+      "dateLabel": "명, mid-16th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP154006.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: mid-16th century; Ming dynasty (1368–1644), Jiajing mark and period (1522–66).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "mid-16th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-781812",
+      "name": "Censer in the form of a mythical beast",
+      "source": "https://www.metmuseum.org/art/collection/search/781812",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1600,
+      "yearEnd": 1644,
+      "dateLabel": "명, early 17th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-17100-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: early 17th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "early 17th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-854455",
+      "name": "\"The Archer\" cistern",
+      "source": "https://www.metmuseum.org/art/collection/search/854455",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1730,
+      "yearEnd": 1750,
+      "dateLabel": "청, ca. 1740",
+      "dateBasis": "object-record",
+      "dynasty": "청",
+      "dynastyHanja": "淸",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-23246-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: ca. 1740; Qing dynasty (1644–1911).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "ca. 1740",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-857949",
+      "name": "“Magic Fountain” ewer",
+      "source": "https://www.metmuseum.org/art/collection/search/857949",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1534,
+      "yearEnd": 1566,
+      "dateLabel": "명, mid-16th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-28519-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: mid-16th century; Ming dynasty (1368–1644).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "mid-16th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "cn-met-894293",
+      "name": "Bowl with four horses",
+      "source": "https://www.metmuseum.org/art/collection/search/894293",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "CN",
+      "yearStart": 1600,
+      "yearEnd": 1633,
+      "dateLabel": "명, early 17th century",
+      "dateBasis": "object-record",
+      "dynasty": "명",
+      "dynastyHanja": "明",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "origin": {
+        "lat": 29.269,
+        "lng": 117.1784,
+        "place": "경덕진(景德鎭) 가마, 소장처 기록",
+        "certainty": "known"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-28309-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: early 17th century; Ming dynasty (1368–1644), Tianqi period (1621–27).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "early 17th century",
+        "sourcePlace": "Jingdezhen ware",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-39884",
+      "name": "Wine cup with ear handles",
+      "source": "https://www.metmuseum.org/art/collection/search/39884",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1400,
+      "yearEnd": 1499,
+      "dateLabel": "조선, 15th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP295374.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 15th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "15th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-42310",
+      "name": "Square bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/42310",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1849,
+      "dateLabel": "조선, first half of the 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP109334.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: first half of the 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "first half of the 19th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-42311",
+      "name": "Brush holder with lotus decoration",
+      "source": "https://www.metmuseum.org/art/collection/search/42311",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1834,
+      "yearEnd": 1866,
+      "dateLabel": "조선, mid-19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain with openwork design",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP105143.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: mid-19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "mid-19th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-42312",
+      "name": "Small Jar with Cover",
+      "source": "https://www.metmuseum.org/art/collection/search/42312",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/63_177ab.JPG",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-45432",
+      "name": "Moon jar",
+      "source": "https://www.metmuseum.org/art/collection/search/45432",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1750,
+      "yearEnd": 1799,
+      "dateLabel": "조선, second half 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP231900.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: second half 18th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "second half 18th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-57438",
+      "name": "Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/57438",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/19_80_2_S1_sf.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-684272",
+      "name": "Bowl decorated with the Ten Symbols of Longevity",
+      "source": "https://www.metmuseum.org/art/collection/search/684272",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with cobalt-blue design",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP702970.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-72325",
+      "name": "Water dropper in the shape of a fish",
+      "source": "https://www.metmuseum.org/art/collection/search/72325",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1867,
+      "yearEnd": 1899,
+      "dateLabel": "조선, late 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with underglaze cobalt blue",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP109336.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 19th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-72499",
+      "name": "Dish",
+      "source": "https://www.metmuseum.org/art/collection/search/72499",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1450,
+      "yearEnd": 1499,
+      "dateLabel": "조선, second half 15th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP231904.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: second half 15th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "second half 15th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-72620",
+      "name": "Ring-shaped water dropper",
+      "source": "https://www.metmuseum.org/art/collection/search/72620",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP257885.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-72737",
+      "name": "Faceted jar decorated with plum blossoms and bamboo",
+      "source": "https://www.metmuseum.org/art/collection/search/72737",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1767,
+      "yearEnd": 1833,
+      "dateLabel": "조선, end of the 18th–early 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with cobalt-blue design",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP257918.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: end of the 18th–early 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "end of the 18th–early 19th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-72738",
+      "name": "Jar decorated with flowers and insects",
+      "source": "https://www.metmuseum.org/art/collection/search/72738",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1736,
+      "yearEnd": 1770,
+      "dateLabel": "조선, mid-18th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with underglaze cobalt-blue design",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP133072.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: mid-18th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "mid-18th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-74243",
+      "name": "Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/74243",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP253556.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-75833",
+      "name": "Bowl with floral and abstract motifs and inscription",
+      "source": "https://www.metmuseum.org/art/collection/search/75833",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1847,
+      "yearEnd": 1847,
+      "dateLabel": "조선, dated 1847",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with underglaze cobalt-blue design",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP254525.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: dated 1847; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "dated 1847",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-76114",
+      "name": "Dragon jar",
+      "source": "https://www.metmuseum.org/art/collection/search/76114",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1750,
+      "yearEnd": 1810,
+      "dateLabel": "조선, second half 18th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with underglaze cobalt-blue design",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP271362.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: second half 18th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "second half 18th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-77917",
+      "name": "Water dropper in the shape of a house",
+      "source": "https://www.metmuseum.org/art/collection/search/77917",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with underglaze blue",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP272585.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-78453",
+      "name": "Bowl decorated with auspicious characters",
+      "source": "https://www.metmuseum.org/art/collection/search/78453",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with cobalt-blue design",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP702962.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-851662",
+      "name": "Jar with floral roundels and inscriptions",
+      "source": "https://www.metmuseum.org/art/collection/search/851662",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with underglaze cobalt-blue decoration",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-21653-003.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-910524",
+      "name": "Openwork jar with peonies",
+      "source": "https://www.metmuseum.org/art/collection/search/910524",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1768,
+      "yearEnd": 1833,
+      "dateLabel": "조선, late 18th–early 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "white",
+      "material": "Porcelain",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-34236-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: late 18th–early 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "late 18th–early 19th century",
+        "sourcePlace": "",
+        "query": "white porcelain"
+      }
+    },
+    {
+      "holdingMuseumVerified": true,
+      "id": "kr-met-930808",
+      "name": "Brush pot",
+      "source": "https://www.metmuseum.org/art/collection/search/930808",
+      "nameHanja": "",
+      "holdingMuseumId": "met",
+      "cultureRegion": "KR",
+      "yearStart": 1800,
+      "yearEnd": 1899,
+      "dateLabel": "조선, 19th century",
+      "dateBasis": "object-record",
+      "dynasty": "조선",
+      "dynastyHanja": "朝鮮",
+      "category": "ceramic",
+      "ware": "blue-and-white",
+      "material": "Porcelain with underglazed cobalt blue decoration",
+      "origin": {
+        "lat": 37.4095,
+        "lng": 127.255,
+        "place": "경기도 광주 관요(분원) 일대 추정",
+        "certainty": "capital-fallback"
+      },
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-45704-001.jpg",
+      "imageLicense": "CC0 (The Met Open Access)",
+      "imageCredit": "The Metropolitan Museum of Art",
+      "description": "The Met 소장품 기록의 연대: 19th century; Joseon dynasty (1392–1910).",
+      "review": {
+        "status": "pending",
+        "notes": "",
+        "sourceDate": "19th century",
+        "sourcePlace": "",
+        "query": "blue and white porcelain"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "id": "cn-met-200932",
+      "name": "Teapot",
+      "source": "https://www.metmuseum.org/art/collection/search/200932",
+      "excluded": "not porcelain (Ceramics-Porcelain: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-201006",
+      "name": "Cup (part of a set)",
+      "source": "https://www.metmuseum.org/art/collection/search/201006",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-201088",
+      "name": "Bowl (part of a service)",
+      "source": "https://www.metmuseum.org/art/collection/search/201088",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-201234",
+      "name": "Tea cup (part of a service)",
+      "source": "https://www.metmuseum.org/art/collection/search/201234",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-201259",
+      "name": "Tureen with cover (part of a service)",
+      "source": "https://www.metmuseum.org/art/collection/search/201259",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-202509",
+      "name": "Dish",
+      "source": "https://www.metmuseum.org/art/collection/search/202509",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-203266",
+      "name": "Jar with cover",
+      "source": "https://www.metmuseum.org/art/collection/search/203266",
+      "excluded": "not porcelain (Ceramics-Porcelain: Soft-paste porcelain (?), silver gilt)"
+    },
+    {
+      "id": "cn-met-205078",
+      "name": "Plate depicting a lady with parasol",
+      "source": "https://www.metmuseum.org/art/collection/search/205078",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain painted with cobalt)"
+    },
+    {
+      "id": "cn-met-205261",
+      "name": "Taperstick",
+      "source": "https://www.metmuseum.org/art/collection/search/205261",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-205707",
+      "name": "Dish",
+      "source": "https://www.metmuseum.org/art/collection/search/205707",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-206914",
+      "name": "Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/206914",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-208218",
+      "name": "Dish",
+      "source": "https://www.metmuseum.org/art/collection/search/208218",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain with cobalt blue un)"
+    },
+    {
+      "id": "cn-met-208238",
+      "name": "Beaker and saucer",
+      "source": "https://www.metmuseum.org/art/collection/search/208238",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-208258",
+      "name": "Dish",
+      "source": "https://www.metmuseum.org/art/collection/search/208258",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-208932",
+      "name": "Saucer",
+      "source": "https://www.metmuseum.org/art/collection/search/208932",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-210150",
+      "name": "Bowl and dish",
+      "source": "https://www.metmuseum.org/art/collection/search/210150",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-2436",
+      "name": "Covered Platter",
+      "source": "https://www.metmuseum.org/art/collection/search/2436",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-2476",
+      "name": "Soup Tureen",
+      "source": "https://www.metmuseum.org/art/collection/search/2476",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-2552",
+      "name": "Covered Urn",
+      "source": "https://www.metmuseum.org/art/collection/search/2552",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-2770",
+      "name": "Cup",
+      "source": "https://www.metmuseum.org/art/collection/search/2770",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-3045",
+      "name": "Custard Cup",
+      "source": "https://www.metmuseum.org/art/collection/search/3045",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-39854",
+      "name": "Brush pot with poem",
+      "source": "https://www.metmuseum.org/art/collection/search/39854",
+      "excluded": "not public domain or no image"
+    },
+    {
+      "id": "cn-met-41318",
+      "name": "Snuff Bottle with Scene of a Lotus Pond",
+      "source": "https://www.metmuseum.org/art/collection/search/41318",
+      "excluded": "not porcelain (Snuff Bottles: Porcelain with overglazed enamel colors,)"
+    },
+    {
+      "id": "cn-met-41324",
+      "name": "Snuff Bottle with Design of Parcel Wrapper",
+      "source": "https://www.metmuseum.org/art/collection/search/41324",
+      "excluded": "not porcelain (Snuff Bottles: Porcelain with overglaze enamel colors)"
+    },
+    {
+      "id": "cn-met-41340",
+      "name": "Snuff Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/41340",
+      "excluded": "not porcelain (Snuff Bottles: Porcelain)"
+    },
+    {
+      "id": "cn-met-41344",
+      "name": "Snuff Bottle with Immortal and Crane",
+      "source": "https://www.metmuseum.org/art/collection/search/41344",
+      "excluded": "not porcelain (Snuff Bottles: Porcelain with underglaze blue, coral st)"
+    },
+    {
+      "id": "cn-met-41595",
+      "name": "Snuff bottle with bird on a branch",
+      "source": "https://www.metmuseum.org/art/collection/search/41595",
+      "excluded": "not porcelain (Snuff Bottles: Porcelain with green glass stopper)"
+    },
+    {
+      "id": "cn-met-41602",
+      "name": "Snuff Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/41602",
+      "excluded": "not porcelain (Snuff Bottles: White soft paste porcelain, amber stoppe)"
+    },
+    {
+      "id": "cn-met-41603",
+      "name": "Snuff Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/41603",
+      "excluded": "not porcelain (Snuff Bottles: White soft paste porcelain with green ja)"
+    },
+    {
+      "id": "cn-met-41609",
+      "name": "Snuff Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/41609",
+      "excluded": "not porcelain (Snuff Bottles: White porcelain with green jadeite stopp)"
+    },
+    {
+      "id": "cn-met-41611",
+      "name": "Snuff Bottle in the Shape of a Leaf",
+      "source": "https://www.metmuseum.org/art/collection/search/41611",
+      "excluded": "not porcelain (Snuff Bottles: White porcelain with pink tourmaline sto)"
+    },
+    {
+      "id": "cn-met-41612",
+      "name": "Snuff Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/41612",
+      "excluded": "not porcelain (Snuff Bottles: White porcelain with green glass stopper)"
+    },
+    {
+      "id": "cn-met-41689",
+      "name": "Snuff Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/41689",
+      "excluded": "not porcelain (Snuff Bottles: Porcelain)"
+    },
+    {
+      "id": "cn-met-42207",
+      "name": "Jar with Basket of Auspicious Flowers",
+      "source": "https://www.metmuseum.org/art/collection/search/42207",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42225",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/42225",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42228",
+      "name": "Vase in Meiping Shape",
+      "source": "https://www.metmuseum.org/art/collection/search/42228",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42234",
+      "name": "Vase in Meiping Shape",
+      "source": "https://www.metmuseum.org/art/collection/search/42234",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42237",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/42237",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42239",
+      "name": "Vase in Form of Archaic Bronze",
+      "source": "https://www.metmuseum.org/art/collection/search/42239",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42316",
+      "name": "Dish with pheasant and flowers on fan",
+      "source": "https://www.metmuseum.org/art/collection/search/42316",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42317",
+      "name": "Vase with Nine Peaches",
+      "source": "https://www.metmuseum.org/art/collection/search/42317",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42319",
+      "name": "Bowl with flowers",
+      "source": "https://www.metmuseum.org/art/collection/search/42319",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42403",
+      "name": "Vase with flowers and birds",
+      "source": "https://www.metmuseum.org/art/collection/search/42403",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42515",
+      "name": "Chicken cup",
+      "source": "https://www.metmuseum.org/art/collection/search/42515",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42545",
+      "name": "Buddhist monk Budai",
+      "source": "https://www.metmuseum.org/art/collection/search/42545",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-42549",
+      "name": "Jar with carp in lotus pond",
+      "source": "https://www.metmuseum.org/art/collection/search/42549",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-44679",
+      "name": "Zodiac figure: snake",
+      "source": "https://www.metmuseum.org/art/collection/search/44679",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-44708",
+      "name": "Dish with fish in pond",
+      "source": "https://www.metmuseum.org/art/collection/search/44708",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-45842",
+      "name": "White-Robed Guanyin",
+      "source": "https://www.metmuseum.org/art/collection/search/45842",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-460575",
+      "name": "Small vase",
+      "source": "https://www.metmuseum.org/art/collection/search/460575",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-460694",
+      "name": "Dish",
+      "source": "https://www.metmuseum.org/art/collection/search/460694",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-460927",
+      "name": "Figure of lion mounted as lamp",
+      "source": "https://www.metmuseum.org/art/collection/search/460927",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46100",
+      "name": "Platter with the story of Pan An",
+      "source": "https://www.metmuseum.org/art/collection/search/46100",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-461339",
+      "name": "Small vase",
+      "source": "https://www.metmuseum.org/art/collection/search/461339",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-461502",
+      "name": "Water pot",
+      "source": "https://www.metmuseum.org/art/collection/search/461502",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46156",
+      "name": "Miniature meiping vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46156",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46158",
+      "name": "Miniature meiping vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46158",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46463",
+      "name": "Cup with butterflies and melons",
+      "source": "https://www.metmuseum.org/art/collection/search/46463",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46524",
+      "name": "Minature incense burner",
+      "source": "https://www.metmuseum.org/art/collection/search/46524",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46541",
+      "name": "Bottle vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46541",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46550",
+      "name": "Meiping vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46550",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46567",
+      "name": "Miniature vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46567",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46568",
+      "name": "Minature vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46568",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46633",
+      "name": "Miniature vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46633",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46709",
+      "name": "Wine cup with dragon",
+      "source": "https://www.metmuseum.org/art/collection/search/46709",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46766",
+      "name": "Cup",
+      "source": "https://www.metmuseum.org/art/collection/search/46766",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46923",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46923",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-46924",
+      "name": "Meiping vase",
+      "source": "https://www.metmuseum.org/art/collection/search/46924",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47088",
+      "name": "Jar",
+      "source": "https://www.metmuseum.org/art/collection/search/47088",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47336",
+      "name": "Vase with collage of archaistic motifs",
+      "source": "https://www.metmuseum.org/art/collection/search/47336",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47342",
+      "name": "Cup with narrative scene from the “Legend of the White Snake”",
+      "source": "https://www.metmuseum.org/art/collection/search/47342",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47367",
+      "name": "Quadrangular vase",
+      "source": "https://www.metmuseum.org/art/collection/search/47367",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47438",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/47438",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47647",
+      "name": "Vase with floral scrolls",
+      "source": "https://www.metmuseum.org/art/collection/search/47647",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47743",
+      "name": "Cup with flowers",
+      "source": "https://www.metmuseum.org/art/collection/search/47743",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-47866",
+      "name": "Bottle with Dragons",
+      "source": "https://www.metmuseum.org/art/collection/search/47866",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48048",
+      "name": "Cup and saucer with ladies",
+      "source": "https://www.metmuseum.org/art/collection/search/48048",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48160",
+      "name": "Bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/48160",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48164",
+      "name": "Stem cup",
+      "source": "https://www.metmuseum.org/art/collection/search/48164",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48214",
+      "name": "Plate with Monkey, Bees, Magpie, and Deer",
+      "source": "https://www.metmuseum.org/art/collection/search/48214",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48276",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/48276",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48304",
+      "name": "Bottle vase",
+      "source": "https://www.metmuseum.org/art/collection/search/48304",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48309",
+      "name": "Meiping vase",
+      "source": "https://www.metmuseum.org/art/collection/search/48309",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48336",
+      "name": "Gallipot",
+      "source": "https://www.metmuseum.org/art/collection/search/48336",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48369",
+      "name": "Meiping vase",
+      "source": "https://www.metmuseum.org/art/collection/search/48369",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48490",
+      "name": "Meiping vase",
+      "source": "https://www.metmuseum.org/art/collection/search/48490",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48549",
+      "name": "Hanging flower basket",
+      "source": "https://www.metmuseum.org/art/collection/search/48549",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48551",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/48551",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48597",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/48597",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-48666",
+      "name": "Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/48666",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-49220",
+      "name": "Dish",
+      "source": "https://www.metmuseum.org/art/collection/search/49220",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-49356",
+      "name": "Vase with Dragon Handles",
+      "source": "https://www.metmuseum.org/art/collection/search/49356",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-49363",
+      "name": "Flask with bats and medallions of longevity",
+      "source": "https://www.metmuseum.org/art/collection/search/49363",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-49866",
+      "name": "Cup",
+      "source": "https://www.metmuseum.org/art/collection/search/49866",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-49925",
+      "name": "Brick from the Porcelain Pagoda",
+      "source": "https://www.metmuseum.org/art/collection/search/49925",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50034",
+      "name": "Dish with scene of a woman and children",
+      "source": "https://www.metmuseum.org/art/collection/search/50034",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50035",
+      "name": "Cup",
+      "source": "https://www.metmuseum.org/art/collection/search/50035",
+      "excluded": "not public domain or no image"
+    },
+    {
+      "id": "cn-met-50039",
+      "name": "Dish (one of a pair)",
+      "source": "https://www.metmuseum.org/art/collection/search/50039",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-503938",
+      "name": "Xiao",
+      "source": "https://www.metmuseum.org/art/collection/search/503938",
+      "excluded": "not porcelain (Aerophone-Blow Hole-end-blown flute (vertical): Porcelain)"
+    },
+    {
+      "id": "cn-met-50480",
+      "name": "Cup (one of a pair)",
+      "source": "https://www.metmuseum.org/art/collection/search/50480",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50562",
+      "name": "Cup with design of waves",
+      "source": "https://www.metmuseum.org/art/collection/search/50562",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50716",
+      "name": "Foliated plate with lotus",
+      "source": "https://www.metmuseum.org/art/collection/search/50716",
+      "excluded": "not porcelain (Ceramics: Stoneware with incised decoration under )"
+    },
+    {
+      "id": "cn-met-50724",
+      "name": "Rouge Box",
+      "source": "https://www.metmuseum.org/art/collection/search/50724",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50725",
+      "name": "Rouge Box",
+      "source": "https://www.metmuseum.org/art/collection/search/50725",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50726",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/50726",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50732",
+      "name": "Wine cup with bamboo",
+      "source": "https://www.metmuseum.org/art/collection/search/50732",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50898",
+      "name": "Gourd-Shaped Bottle (one of a pair)",
+      "source": "https://www.metmuseum.org/art/collection/search/50898",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-50981",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/50981",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-51020",
+      "name": "Vase with Elephant Heads and Cloud Designs",
+      "source": "https://www.metmuseum.org/art/collection/search/51020",
+      "excluded": "not porcelain (Ceramics: Soft-paste porcelain with incised and ap)"
+    },
+    {
+      "id": "cn-met-51118",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/51118",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-51155",
+      "name": "Incense Burner",
+      "source": "https://www.metmuseum.org/art/collection/search/51155",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-51171",
+      "name": "Water Pot with Boys",
+      "source": "https://www.metmuseum.org/art/collection/search/51171",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-51192",
+      "name": "Double gourd shaped vase",
+      "source": "https://www.metmuseum.org/art/collection/search/51192",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-51991",
+      "name": "Brick from the Porcelain Pagoda",
+      "source": "https://www.metmuseum.org/art/collection/search/51991",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-51992",
+      "name": "Brick from the Porcelain Pagoda",
+      "source": "https://www.metmuseum.org/art/collection/search/51992",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-52022",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/52022",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-52872",
+      "name": "Set of wine cups with flowers of the twelve months",
+      "source": "https://www.metmuseum.org/art/collection/search/52872",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-52889",
+      "name": "Teapot with peaches",
+      "source": "https://www.metmuseum.org/art/collection/search/52889",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-52908",
+      "name": "Bottle vase",
+      "source": "https://www.metmuseum.org/art/collection/search/52908",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-52916",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/52916",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-52921",
+      "name": "Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/52921",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-52943",
+      "name": "Bottle",
+      "source": "https://www.metmuseum.org/art/collection/search/52943",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-53774",
+      "name": "Vase with nine peaches",
+      "source": "https://www.metmuseum.org/art/collection/search/53774",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-53854",
+      "name": "Cup",
+      "source": "https://www.metmuseum.org/art/collection/search/53854",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-53856",
+      "name": "Miniature Vase",
+      "source": "https://www.metmuseum.org/art/collection/search/53856",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-53857",
+      "name": "Water Dropper",
+      "source": "https://www.metmuseum.org/art/collection/search/53857",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-53907",
+      "name": "Bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/53907",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-5977",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/5977",
+      "excluded": "not porcelain (no classification: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-6236",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6236",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6265",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6265",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6385",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6385",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6386",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6386",
+      "excluded": "not porcelain (no classification: Hard-paste porcelain)"
+    },
+    {
+      "id": "cn-met-6387",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6387",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6388",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6388",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6389",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6389",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6444",
+      "name": "Soup Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6444",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6445",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6445",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6447",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6447",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6449",
+      "name": "Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/6449",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-6551",
+      "name": "Platter",
+      "source": "https://www.metmuseum.org/art/collection/search/6551",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-680960",
+      "name": "Ewer with peacock and peonies",
+      "source": "https://www.metmuseum.org/art/collection/search/680960",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-680974",
+      "name": "Jar with the emblem of the Order of Saint Augustine",
+      "source": "https://www.metmuseum.org/art/collection/search/680974",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Porcelain painted with cobalt blue under)"
+    },
+    {
+      "id": "cn-met-680978",
+      "name": "Dish with John the Baptist",
+      "source": "https://www.metmuseum.org/art/collection/search/680978",
+      "excluded": "not porcelain (Ceramics-Porcelain-Export: Porcelain painted with cobalt blue under)"
+    },
+    {
+      "id": "cn-met-7217",
+      "name": "Saucer",
+      "source": "https://www.metmuseum.org/art/collection/search/7217",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-7296",
+      "name": "Saucer",
+      "source": "https://www.metmuseum.org/art/collection/search/7296",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-76118",
+      "name": "Bowl with Flowers and Waves",
+      "source": "https://www.metmuseum.org/art/collection/search/76118",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-76452",
+      "name": "Vase with Scene from The Story of the Blue Robe",
+      "source": "https://www.metmuseum.org/art/collection/search/76452",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-7661",
+      "name": "Soup Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/7661",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-7662",
+      "name": "Soup Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/7662",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-76751",
+      "name": "Plate with vase of flowers",
+      "source": "https://www.metmuseum.org/art/collection/search/76751",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-7687",
+      "name": "Soup Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/7687",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-7688",
+      "name": "Soup Plate",
+      "source": "https://www.metmuseum.org/art/collection/search/7688",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-77323",
+      "name": "Shard",
+      "source": "https://www.metmuseum.org/art/collection/search/77323",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-77324",
+      "name": "Shard",
+      "source": "https://www.metmuseum.org/art/collection/search/77324",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-77325",
+      "name": "Shard",
+      "source": "https://www.metmuseum.org/art/collection/search/77325",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-77326",
+      "name": "Shard",
+      "source": "https://www.metmuseum.org/art/collection/search/77326",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-77330",
+      "name": "Shard",
+      "source": "https://www.metmuseum.org/art/collection/search/77330",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-77341",
+      "name": "Fragment of a bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/77341",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-77343",
+      "name": "Fragment of a bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/77343",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-77344",
+      "name": "Fragment of a bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/77344",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "cn-met-78008",
+      "name": "Brush Holder",
+      "source": "https://www.metmuseum.org/art/collection/search/78008",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-7941",
+      "name": "Sugar Bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/7941",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-843",
+      "name": "Bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/843",
+      "excluded": "not porcelain (no classification: Porcelain)"
+    },
+    {
+      "id": "cn-met-856856",
+      "name": "Ceremonial vessel with animal heads",
+      "source": "https://www.metmuseum.org/art/collection/search/856856",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "cn-met-918706",
+      "name": "Beaker with “Posteleӱn Verkooping” (porcelain selling)",
+      "source": "https://www.metmuseum.org/art/collection/search/918706",
+      "excluded": "not porcelain (Ceramics-Porcelain: Jingdezhen hard-paste porcelain with ena)"
+    },
+    {
+      "id": "cn-met-918707",
+      "name": "Teabowl with Chinoiserie decoration",
+      "source": "https://www.metmuseum.org/art/collection/search/918707",
+      "excluded": "not porcelain (Ceramics-Porcelain: Jingdezhen porcelain with underglaze blu)"
+    },
+    {
+      "id": "kr-met-30330",
+      "name": "Bow Case and Quiver",
+      "source": "https://www.metmuseum.org/art/collection/search/30330",
+      "excluded": "not porcelain (Archery Equipment-Arrows & Quivers: Leather, gold, enamel)"
+    },
+    {
+      "id": "kr-met-36455",
+      "name": "Water Dropper with Slip-Inlaid Design",
+      "source": "https://www.metmuseum.org/art/collection/search/36455",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-36456",
+      "name": "Water Dropper with a Leaf Spray Design",
+      "source": "https://www.metmuseum.org/art/collection/search/36456",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-39571",
+      "name": "Bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/39571",
+      "excluded": "not porcelain (Ceramics: Buncheong ware with white slip)"
+    },
+    {
+      "id": "kr-met-39885",
+      "name": "Jar with grapevine decoration",
+      "source": "https://www.metmuseum.org/art/collection/search/39885",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-39889",
+      "name": "Portrait of the Great Master Seosan",
+      "source": "https://www.metmuseum.org/art/collection/search/39889",
+      "excluded": "not porcelain (Paintings: Hanging scroll; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-40070",
+      "name": "Dragon",
+      "source": "https://www.metmuseum.org/art/collection/search/40070",
+      "excluded": "not porcelain (Paintings: Hanging scroll; ink on silk)"
+    },
+    {
+      "id": "kr-met-40073",
+      "name": "Golden Rooster and Hen",
+      "source": "https://www.metmuseum.org/art/collection/search/40073",
+      "excluded": "not porcelain (Paintings: Hanging scroll; ink and color on paper)"
+    },
+    {
+      "id": "kr-met-40428",
+      "name": "Examining the Hanging Picture",
+      "source": "https://www.metmuseum.org/art/collection/search/40428",
+      "excluded": "not porcelain (Paintings: Album leaf; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-40436",
+      "name": "Examining Antiques at Literati Gathering",
+      "source": "https://www.metmuseum.org/art/collection/search/40436",
+      "excluded": "not porcelain (Paintings: Album leaf; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-40437",
+      "name": "Examining Antiques at Literati Gathering",
+      "source": "https://www.metmuseum.org/art/collection/search/40437",
+      "excluded": "not porcelain (Paintings: Album leaf; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-40440",
+      "name": "Examining Antiques at Literati Gathering",
+      "source": "https://www.metmuseum.org/art/collection/search/40440",
+      "excluded": "not porcelain (Paintings: Album leaf; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-40444",
+      "name": "Examining Antiques at Literati Gathering",
+      "source": "https://www.metmuseum.org/art/collection/search/40444",
+      "excluded": "not porcelain (Paintings: Album leaf; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-42313",
+      "name": "Large jar decorated with peonies",
+      "source": "https://www.metmuseum.org/art/collection/search/42313",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-44976",
+      "name": "Bowl",
+      "source": "https://www.metmuseum.org/art/collection/search/44976",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-44977",
+      "name": "Jar",
+      "source": "https://www.metmuseum.org/art/collection/search/44977",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-45063",
+      "name": "Butterflies and Peonies",
+      "source": "https://www.metmuseum.org/art/collection/search/45063",
+      "excluded": "not porcelain (Paintings: Ink and color on silk)"
+    },
+    {
+      "id": "kr-met-48136",
+      "name": "Bowl with phoenixes",
+      "source": "https://www.metmuseum.org/art/collection/search/48136",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-49596",
+      "name": "Rank badge with a pair of tiger-leopards",
+      "source": "https://www.metmuseum.org/art/collection/search/49596",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk and metallic thread embroidery on s)"
+    },
+    {
+      "id": "kr-met-49599",
+      "name": "Rank Badge with a Pair of Cranes",
+      "source": "https://www.metmuseum.org/art/collection/search/49599",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk satin damask)"
+    },
+    {
+      "id": "kr-met-49600",
+      "name": "Rank badge with a crane (one of a pair)",
+      "source": "https://www.metmuseum.org/art/collection/search/49600",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk and metallic-thread embroidery on s)"
+    },
+    {
+      "id": "kr-met-49601",
+      "name": "Rank badge with a crane (one of a pair)",
+      "source": "https://www.metmuseum.org/art/collection/search/49601",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk, metallic thread)"
+    },
+    {
+      "id": "kr-met-49812",
+      "name": "Epitaph tablets (myoji)",
+      "source": "https://www.metmuseum.org/art/collection/search/49812",
+      "excluded": "fragment, photograph or reproduction"
+    },
+    {
+      "id": "kr-met-50669",
+      "name": "Rank Badge with Decoration of Two Cranes among Clouds",
+      "source": "https://www.metmuseum.org/art/collection/search/50669",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk satin damask)"
+    },
+    {
+      "id": "kr-met-50670",
+      "name": "Rank Badge with Decoration of Two Cranes among Clouds",
+      "source": "https://www.metmuseum.org/art/collection/search/50670",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk satin damask)"
+    },
+    {
+      "id": "kr-met-50671",
+      "name": "Civil-Official Hyungbae (Rank Badge)",
+      "source": "https://www.metmuseum.org/art/collection/search/50671",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk damask)"
+    },
+    {
+      "id": "kr-met-50672",
+      "name": "Civil-Official Hyungbae (Rank Badge)",
+      "source": "https://www.metmuseum.org/art/collection/search/50672",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk damask)"
+    },
+    {
+      "id": "kr-met-50673",
+      "name": "Civil-Official Hyungbae (Rank Badge)",
+      "source": "https://www.metmuseum.org/art/collection/search/50673",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk damask)"
+    },
+    {
+      "id": "kr-met-50674",
+      "name": "Civil-Official Hyungbae (Rank Badge)",
+      "source": "https://www.metmuseum.org/art/collection/search/50674",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk damask)"
+    },
+    {
+      "id": "kr-met-50677",
+      "name": "Rank Badge",
+      "source": "https://www.metmuseum.org/art/collection/search/50677",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk)"
+    },
+    {
+      "id": "kr-met-50678",
+      "name": "Rank Badge",
+      "source": "https://www.metmuseum.org/art/collection/search/50678",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk)"
+    },
+    {
+      "id": "kr-met-50679",
+      "name": "Rank Badge",
+      "source": "https://www.metmuseum.org/art/collection/search/50679",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk)"
+    },
+    {
+      "id": "kr-met-54911",
+      "name": "Dragons Playing with the Sacred Pearl",
+      "source": "https://www.metmuseum.org/art/collection/search/54911",
+      "excluded": "not porcelain (Paintings: Framed painting; ink and color on paper)"
+    },
+    {
+      "id": "kr-met-656430",
+      "name": "Portrait of Yun Dongseom (1710–1795)",
+      "source": "https://www.metmuseum.org/art/collection/search/656430",
+      "excluded": "not porcelain (Paintings: Hanging scroll; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-70398",
+      "name": "Panel",
+      "source": "https://www.metmuseum.org/art/collection/search/70398",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk tabby, silk and gold-wrapped thread)"
+    },
+    {
+      "id": "kr-met-70987",
+      "name": "Rank Badge with Leopard",
+      "source": "https://www.metmuseum.org/art/collection/search/70987",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk)"
+    },
+    {
+      "id": "kr-met-70988",
+      "name": "Rank Badge with Crane",
+      "source": "https://www.metmuseum.org/art/collection/search/70988",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk)"
+    },
+    {
+      "id": "kr-met-70991",
+      "name": "Rank Badge with White Crane",
+      "source": "https://www.metmuseum.org/art/collection/search/70991",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk)"
+    },
+    {
+      "id": "kr-met-70992",
+      "name": "Rank Badge with White Crane",
+      "source": "https://www.metmuseum.org/art/collection/search/70992",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk)"
+    },
+    {
+      "id": "kr-met-70993",
+      "name": "Civil-Official Hyungbae (Rank Badge)",
+      "source": "https://www.metmuseum.org/art/collection/search/70993",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk damask)"
+    },
+    {
+      "id": "kr-met-70994",
+      "name": "Civil-Official Hyungbae (Rank Badge)",
+      "source": "https://www.metmuseum.org/art/collection/search/70994",
+      "excluded": "not porcelain (Textiles-Embroidered: Silk embroidery on silk damask)"
+    },
+    {
+      "id": "kr-met-73217",
+      "name": "Jar decorated with dragons",
+      "source": "https://www.metmuseum.org/art/collection/search/73217",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-851661",
+      "name": "Jar with lid",
+      "source": "https://www.metmuseum.org/art/collection/search/851661",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-852446",
+      "name": "The Banquet of Guo Ziyi",
+      "source": "https://www.metmuseum.org/art/collection/search/852446",
+      "excluded": "not porcelain (Paintings: Eight-panel folding screen; ink and colo)"
+    },
+    {
+      "id": "kr-met-853841",
+      "name": "Covered jar",
+      "source": "https://www.metmuseum.org/art/collection/search/853841",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-853890",
+      "name": "Hunting screen",
+      "source": "https://www.metmuseum.org/art/collection/search/853890",
+      "excluded": "not porcelain (Paintings: Eight-panel folding screen, ink and colo)"
+    },
+    {
+      "id": "kr-met-853891",
+      "name": "Mountain god with tiger",
+      "source": "https://www.metmuseum.org/art/collection/search/853891",
+      "excluded": "not porcelain (Paintings: Framed painting; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-853892",
+      "name": "Dragon and carp",
+      "source": "https://www.metmuseum.org/art/collection/search/853892",
+      "excluded": "not porcelain (Paintings: Framed painting; ink and color on paper)"
+    },
+    {
+      "id": "kr-met-853894",
+      "name": "Ancestral shrine painting",
+      "source": "https://www.metmuseum.org/art/collection/search/853894",
+      "excluded": "not porcelain (Paintings: Ink and color on paper)"
+    },
+    {
+      "id": "kr-met-853907",
+      "name": "Civil-official husu (rear panel)",
+      "source": "https://www.metmuseum.org/art/collection/search/853907",
+      "excluded": "not porcelain (Textiles: Silk embroidery)"
+    },
+    {
+      "id": "kr-met-853921",
+      "name": "Dallyeong (Official’s robe)",
+      "source": "https://www.metmuseum.org/art/collection/search/853921",
+      "excluded": "not porcelain (Textiles: Silk)"
+    },
+    {
+      "id": "kr-met-860960",
+      "name": "Hawk at sunrise",
+      "source": "https://www.metmuseum.org/art/collection/search/860960",
+      "excluded": "not porcelain (Paintings: Hanging scroll; ink and color on silk)"
+    },
+    {
+      "id": "kr-met-892635",
+      "name": "Jar decorated with dragons",
+      "source": "https://www.metmuseum.org/art/collection/search/892635",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-910553",
+      "name": "Deer amid pines",
+      "source": "https://www.metmuseum.org/art/collection/search/910553",
+      "excluded": "not porcelain (Paintings: Hanging scroll; ink and color on paper)"
+    },
+    {
+      "id": "kr-met-918072",
+      "name": "Birds and Flowers",
+      "source": "https://www.metmuseum.org/art/collection/search/918072",
+      "excluded": "not porcelain (Textiles-Embroidered: Ten-panel folding screen, silk embroider)"
+    },
+    {
+      "id": "kr-met-923306",
+      "name": "Water dropper in the shape of a mountain citadel",
+      "source": "https://www.metmuseum.org/art/collection/search/923306",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-924981",
+      "name": "Brush holder with pomegranate and inscription",
+      "source": "https://www.metmuseum.org/art/collection/search/924981",
+      "excluded": "not plain white or blue-and-white"
+    },
+    {
+      "id": "kr-met-929083",
+      "name": "Deer under Pines",
+      "source": "https://www.metmuseum.org/art/collection/search/929083",
+      "excluded": "not porcelain (Paintings: Hanging scroll; ink and color on paper)"
+    },
+    {
+      "id": "kr-met-929265",
+      "name": "Birds, Animals, and Still-lifes",
+      "source": "https://www.metmuseum.org/art/collection/search/929265",
+      "excluded": "not porcelain (Paintings: Eight-panel folding screen; ink and colo)"
+    },
+    {
+      "id": "kr-met-955314",
+      "name": "Genre Paintings",
+      "source": "https://www.metmuseum.org/art/collection/search/955314",
+      "excluded": "not porcelain (Paintings: Album of four leaves; ink and color on s)"
+    }
+  ],
+  "failures": [
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/853842",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/853842: 404 Not Found"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/853842",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/853842: 404 Not Found"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/40438",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/40438: 403 Forbidden"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/73817",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/73817: 404 Not Found"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/747460",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/747460: 403 Forbidden"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/46590",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/46590: 403 Forbidden"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/461498",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/461498: 403 Forbidden"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/52978",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/52978: 403 Forbidden"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/747460",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/747460: 404 Not Found"
+    },
+    {
+      "source": "met",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/706314",
+      "error": "https://collectionapi.metmuseum.org/public/collection/v1/objects/706314: 404 Not Found"
+    }
+  ]
+}

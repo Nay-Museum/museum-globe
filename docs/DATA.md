@@ -7,15 +7,15 @@
 
 | 항목 | 로컬 집계 |
 | --- | --- |
-| 전체 / 고유 ID | 1,191건 / 1,191개 (12세기 비교군 1,125 + 백자·청화백자 표본 66) |
-| 한국 / 중국 | 1,101건 / 90건 |
-| 소장처 ID | `nmk` 1,088건, `gugong-bj` 77건, `vam` 26건 (`met`은 등록만 되어 있고 아직 유물 없음) |
+| 전체 / 고유 ID | 1,228건 / 1,228개 (12세기 비교군 1,125 + 백자·청화백자 표본 103) |
+| 한국 / 중국 | 1,120건 / 108건 |
+| 소장처 ID | `nmk` 1,088건, `gugong-bj` 77건, `met` 37건, `vam` 26건 |
 | 분류 | `ceramic` 1,079건, `painting` 43건, `metalcraft` 3건 |
-| 연대 근거 `dateBasis` | `object-record` 65건(12세기 한국 23 + 표본 42), `assigned-comparison` 1,045건(한국), `dynasty` 81건(12세기 중국 57 + 표본 24) |
-| 유약 `ware` | `celadon` 1,077건, `white` 26건, `blue-and-white` 40건, `null` 48건(중국 회화 43·금속 3·균요 2) |
-| 위치 확실성 | `known` 21건(표본 중 기록에 가마가 명시된 것), 나머지 `capital-fallback` |
+| 연대 근거 `dateBasis` | `object-record` 102건(12세기 한국 23 + 표본 79), `assigned-comparison` 1,045건(한국), `dynasty` 81건(12세기 중국 57 + 표본 24) |
+| 유약 `ware` | `celadon` 1,077건, `white` 43건, `blue-and-white` 60건, `null` 48건(중국 회화 43·금속 3·균요 2) |
+| 위치 확실성 | `known` 38건(표본 중 기록에 가마가 명시된 것: 경덕진 29, 덕화 9), 나머지 `capital-fallback` |
 | `holdingMuseumVerified` | 전부 `true` |
-| 연대 필터 | 12세기 비교군은 12세기에만, 표본 66건은 14–19세기에만 겹침 |
+| 연대 필터 | 12세기 비교군은 12세기에만, 표본 103건은 14–19세기에만 겹침 |
 
 `index.html`의 영어 About 문구는 이 표와 아래 연대·위치 설명을 요약한 정적 텍스트다. 데이터 변경 시 함께 갱신한다.
 이는 선택된 수집 결과의 크기다. 박물관의 전체 소장 수나 최대 수집량이 아니다.
@@ -114,7 +114,7 @@
 | 국립중앙박물관 | 공식 검색 `백자`, `백자 청화` + 상세 페이지 | 상세의 `국적/시대` 칸만 사용. 대부분 `조선`뿐이라 `dateBasis: dynasty`(1392–1897). 위치는 광주 관요 일대 추정 |
 | 고궁박물원 | 도자 소장품 검색(`/searchs/ceramics.html`) `青花`, `甜白`, `白釉` | 목록의 시대 칸. 연호(예: 明永乐)가 있으면 재위 연도로 `object-record`, 왕조만 있으면 `dynasty`. 가마 칸에 景德镇窑가 있으면 위치 `known` |
 | V&A | 공식 API v2, 장소 ID(한국 `x30965`, 중국 `x29398`) | 소장품 기록의 제작 연대(`productionDates`)로 `object-record`. 제작지가 Jingdezhen이면 위치 `known` |
-| The Met | 공식 Open Access API, `isPublicDomain`만 | 기록의 `objectBeginDate`–`objectEndDate`로 `object-record`. 일부 네트워크에서 자동 요청이 차단됨 |
+| The Met | 공식 Open Access API(`v1.1/search` + `v1/objects`), Ceramics 분류의 자기·`isPublicDomain`만 | 기록의 `objectBeginDate`–`objectEndDate`로 `object-record`. medium의 Jingdezhen·Dehua ware 표기는 위치 `known` |
 
 유약 분류는 기록 자체의 제목·재질 문구로만 한다. 철화·진사·채색 등이 섞인 기물과 청백자(青白釉)는 `null`로 보고 제외한다.
 조각·사진·복제품·지석(묘지석), 1368년 이전·1911년 이후 제작품도 제외한다. 2026-10-27 시험 실행(그룹당 5점)에서 V&A 한국 백자는 조건에 맞는 것이 3점뿐이었다.
@@ -124,6 +124,13 @@
 188개 후보 중 66건을 검토 후 반영했다. 박물관·문화권·종류별로 약 10건, V&A 백자는 조건에 맞는 한국 3건·중국 3건이다.
 같은 이름·같은 사진(다기 세트)의 중복, 철채·채색·금채가 섞인 기물, 연두색 유약 기물은 제외했다.
 덕화요(德化窯)가 기물명에 명시된 5건은 위치를 덕화(`known`)로 두었다. 국립중앙박물관 20건은 모두 `dynasty`(조선 1392–1897)다.
+
+### 2026-10-27 The Met 표본 반영
+
+The Met은 2026-10-01에 `/public/collection/v1/search`를 폐지했다. 수집기는 `v1.1/search`(offset·limit 페이지)를 쓴다.
+후보 65건 중 37건을 반영했다(한국 백자 9·청화백자 10, 중국 청화 10·백자 8). 모든 이미지는 `isPublicDomain` CC0다.
+노랑·복숭아빛·청자·연청·갈색 유약이 섞인 기물, 같은 시명 잔 세트의 중복, 장저우요(Zhangzhou) 기물은 제외했다.
+medium에 `(Jingdezhen ware)`·`(Dehua ware)`가 명시된 기물은 해당 가마(`known`)에 두었다.
 
 ## 수집기 범위와 위험
 

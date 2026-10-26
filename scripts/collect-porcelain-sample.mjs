@@ -130,7 +130,8 @@ function exclusionReason(text, yearStart, yearEnd) {
 const ORIGINS = {
   gwangju: { lat: 37.4095, lng: 127.255, place: "경기도 광주 관요(분원) 일대 추정", certainty: "capital-fallback" },
   jingdezhenEstimate: { lat: 29.269, lng: 117.1784, place: "경덕진(景德鎭) 가마 일대 추정", certainty: "capital-fallback" },
-  jingdezhenRecorded: { lat: 29.269, lng: 117.1784, place: "경덕진(景德鎭) 가마, 소장처 기록", certainty: "known" }
+  jingdezhenRecorded: { lat: 29.269, lng: 117.1784, place: "경덕진(景德鎭) 가마, 소장처 기록", certainty: "known" },
+  dehuaRecorded: { lat: 25.4919, lng: 118.2402, place: "덕화(德化) 가마, 소장처 기록", certainty: "known" }
 };
 
 const JOSEON = { dynasty: "조선", dynastyHanja: "朝鮮", yearStart: 1392, yearEnd: 1897 };
@@ -163,8 +164,10 @@ function centuryLabel(yearStart, yearEnd) {
 // Classifies from the object's own title/medium text; null means "not plain white or blue-and-white".
 // Mixed decoration (blue with iron or copper red, enamels) and qingbai are left out on purpose.
 function wareFromText(text) {
-  if (/철화|철채|진사|동화|상감|청채|동채|鐵畵|辰砂|彩|描金|塑贴|釉里红|青白|qingbai|iron|copper|famille|enamel|polychrome|overglaze|green glaze|celadon/i.test(text)) return null;
+  if (/철화|철채|진사|동화|상감|청채|동채|鐵畵|辰砂|彩|描金|塑贴|釉里红|青白|qingbai|iron|copper|famille|enamel|polychrome|overglaze|green glaze|celadon|glazes|brown/i.test(text)) return null;
   if (/청화|靑畵|靑華|青花|blue[- ]and[- ]white|underglaze (?:cobalt[- ])?blue|cobalt[- ]blue/i.test(text)) return "blue-and-white";
+  // A coloured glaze or any other blue makes it something other than plain white porcelain.
+  if (/yellow|peach|turquoise|green|brown|black|coffee|monochrome|blue|coloured glaze|colored glaze/i.test(text)) return null;
   if (/백자|白磁|白瓷|甜白|白釉|white porcelain|white ware|blanc de chine/i.test(text)) return "white";
   return null;
 }
@@ -446,9 +449,10 @@ async function collectMet(perGroup) {
         const excluded = exclusionReason(text, record.objectBeginDate, record.objectEndDate);
         // The Met writes plain white porcelain as just "Porcelain" (optionally with carved or moulded decoration).
         const plainWhite = /^porcelain(?: with (?:incised|molded|moulded|carved|relief|impressed|openwork)[^,;]*)?(?: \(jingdezhen ware\))?$/i.test(medium.trim())
-          && !/blue|red|green|yellow|enamel|gilt/i.test(record.title);
+          && !/blue|red|green|yellow|enamel|gilt/i.test(record.title)
+          && !/yellow|peach|celadon|turquoise|green|brown|black|blue/i.test(medium);
         const recordWare = wareFromText(text) ?? (plainWhite ? "white" : null);
-        if (record.classification !== "Ceramics" || !/porcelain/i.test(medium)) {
+        if (record.classification !== "Ceramics" || !/porcelain/i.test(medium) || /soft-paste/i.test(medium)) {
           out.push({ ...base, excluded: `not porcelain (${record.classification || "no classification"}: ${medium.slice(0, 40)})` });
           continue;
         }
@@ -456,11 +460,15 @@ async function collectMet(perGroup) {
           out.push({ ...base, excluded: "not public domain or no image" });
           continue;
         }
+        // Leave pieces of the other ware unrecorded so that ware's own query can still take them.
+        if (!excluded && recordWare && recordWare !== ware) continue;
         if (excluded || recordWare !== ware) {
-          out.push({ ...base, excluded: excluded || `ware reads as ${recordWare ?? "other decoration"}` });
+          out.push({ ...base, excluded: excluded || "not plain white or blue-and-white" });
           continue;
         }
         const dynasty = culture === "KR" ? JOSEON : chineseDynasty(record.objectBeginDate, record.objectEndDate);
+        const dateText = record.objectDate || `${record.objectBeginDate}–${record.objectEndDate}`;
+        const kiln = /dehua/i.test(medium) ? ORIGINS.dehuaRecorded : /jingdezhen/i.test(medium) ? ORIGINS.jingdezhenRecorded : ORIGINS.jingdezhenEstimate;
         out.push(candidate({
           ...base,
           nameHanja: "",
@@ -468,19 +476,19 @@ async function collectMet(perGroup) {
           cultureRegion: culture,
           yearStart: record.objectBeginDate,
           yearEnd: record.objectEndDate,
-          dateLabel: `${dynasty.dynasty}, ${record.objectDate}`,
+          dateLabel: `${dynasty.dynasty}, ${dateText}`,
           dateBasis: "object-record",
           dynasty: dynasty.dynasty,
           dynastyHanja: dynasty.dynastyHanja,
           category: "ceramic",
           ware,
           material: record.medium || "Porcelain",
-          origin: culture === "KR" ? { ...ORIGINS.gwangju } : { ...(/jingdezhen/i.test(medium) ? ORIGINS.jingdezhenRecorded : ORIGINS.jingdezhenEstimate) },
+          origin: culture === "KR" ? { ...ORIGINS.gwangju } : { ...kiln },
           image: record.primaryImageSmall,
           imageLicense: "CC0 (The Met Open Access)",
           imageCredit: "The Metropolitan Museum of Art",
-          description: `The Met 소장품 기록의 연대: ${record.objectDate}; ${[record.period, record.reign].filter(Boolean).join(", ") || "시대 표기 없음"}.`,
-          review: { sourceDate: record.objectDate, sourcePlace: [record.country, record.city].filter(Boolean).join(", "), query: queries[ware] }
+          description: `The Met 소장품 기록의 연대: ${dateText}; ${[record.period, record.reign].filter(Boolean).join(", ") || "시대 표기 없음"}.`,
+          review: { sourceDate: dateText, sourcePlace: [medium.match(/\(([^)]*ware)\)/i)?.[1], record.country, record.city].filter(Boolean).join(", "), query: queries[ware] }
         }));
       }
     }
