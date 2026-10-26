@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nay_Museum Globe Prototype</title>
-    <link rel="stylesheet" href="css/style.css?v=20261022-about">
+    <link rel="stylesheet" href="css/style.css?v=20261027-intro">
   </head>
   <body>
     <main class="app-shell">
@@ -15,7 +15,10 @@
             <h1>동시대 유물 지구본</h1>
           </div>
           <div class="topbar-actions">
-            <a class="about-link" id="aboutLink" href="#about" lang="en">About</a>
+            <div class="topbar-links">
+              <a class="about-link" id="introLink" href="#intro">소개</a>
+              <a class="about-link" id="aboutLink" href="#about" lang="en">About</a>
+            </div>
             <div class="period-hud" id="periodHud">12세기</div>
           </div>
         </div>
@@ -114,15 +117,49 @@
       </aside>
     </main>
 
-    <dialog class="about-dialog" id="aboutDialog" lang="en" aria-labelledby="aboutTitle">
+    <dialog class="about-dialog" id="aboutDialog" aria-labelledby="aboutTitle">
       <div class="about-header">
         <div>
           <p class="eyebrow">Museum Globe</p>
           <h2 id="aboutTitle">About Museum Globe</h2>
+          <div class="about-tabs" role="tablist" aria-label="소개 / About">
+            <button class="about-tab" id="tabIntro" type="button" role="tab" aria-controls="panelIntro" aria-selected="false" tabindex="-1">소개</button>
+            <button class="about-tab" id="tabAbout" type="button" role="tab" aria-controls="panelAbout" aria-selected="true" lang="en">About</button>
+          </div>
         </div>
-        <button class="popover-close" id="closeAbout" type="button" aria-label="Close About">×</button>
+        <button class="popover-close" id="closeAbout" type="button" aria-label="닫기 (Close)">×</button>
       </div>
-      <div class="about-body">
+      <div class="about-body" id="panelIntro" role="tabpanel" aria-labelledby="tabIntro" lang="ko" hidden>
+        <p>
+          동시대 유물 지구본은 한국과 중국에서 같은 시기에 만들어진 유물을 지구본 위에 나란히 놓고 비교하는 웹 지도입니다.
+          국립중앙박물관, 베이징 고궁박물원, 런던 빅토리아 앤드 앨버트 박물관(V&amp;A)의 소장품 1,191점을 담고 있습니다.
+        </p>
+
+        <h3>무엇을 볼 수 있나요</h3>
+        <ul>
+          <li><b>12세기</b>: 고려청자와 송나라의 회화·도자 1,125점</li>
+          <li><b>14~19세기</b>: 조선 백자·청화백자와 명·청 백자·청화 자기 66점. 같은 종류의 자기를 한국·중국의 박물관과 영국 V&amp;A 소장품으로 함께 볼 수 있습니다.</li>
+        </ul>
+
+        <h3>보는 방법</h3>
+        <ul>
+          <li>아래 <b>세기 막대</b>로 시기를 고릅니다. 막대 아래 점은 유물이 있는 세기이고, ‹ › 버튼은 유물이 있는 세기로 바로 이동합니다.</li>
+          <li>지구본의 <b>점</b>이나 오른쪽 <b>목록</b>을 누르면 사진, 연대, 소장처와 박물관 원문 링크가 나옵니다.</li>
+          <li><b>검색</b>과 한국·중국 버튼, 분류, 도자 종류(청자·백자·청화백자)로 유물을 거를 수 있습니다.</li>
+          <li>빨간 점은 한국 문화권, 청록 점은 중국 문화권 유물입니다. 지구본은 끌어서 돌리고 휠로 확대합니다.</li>
+        </ul>
+
+        <h3>읽을 때 알아 둘 점</h3>
+        <ul>
+          <li>상세 정보의 <b>연대 근거</b>는 연대가 박물관 기록에서 왔는지, 왕조 범위로 추정했는지, 비교를 위해 배치했는지를 알려 줍니다. 예를 들어 12세기 고려청자 중 1,045점은 세기 표기가 없어 비교용으로 12세기에 둔 것입니다.</li>
+          <li>지도 위치는 대부분 시대·문화권별 <b>추정 위치</b>입니다. 박물관 기록에 가마가 적힌 21점만 그 가마에 놓았습니다. 같은 자리의 점을 흩어 놓은 모양에는 지리적 의미가 없습니다.</li>
+          <li>모든 기록은 각 박물관의 공식 소장품 페이지로 연결됩니다. 데이터 출처와 한계는 <a href="#about" id="aboutFromIntro">About</a>(영문)에 자세히 적었습니다.</li>
+        </ul>
+
+        <h3>만든 사람</h3>
+        <p>김나윤이 디지털 아카이빙을 스스로 익히기 위해 2026년 6월에 만들었고, AI 보조 코딩을 활용했습니다. 2026년 10월에 백자·청화백자 표본을 더했습니다.</p>
+      </div>
+      <div class="about-body" id="panelAbout" role="tabpanel" aria-labelledby="tabAbout" lang="en">
         <p>
           Museum Globe is a prototype web map that places Korean and Chinese objects of the same period side by side.
           It holds 1,191 records from three museums: 1,088 from the National Museum of Korea, 77 from the
@@ -184,12 +221,12 @@
       </div>
     </dialog>
 
-    <script src="js/about.js?v=20261022-about"></script>
+    <script src="js/about.js?v=20261027-intro"></script>
     <script src="vendor/globe.gl.min.js"></script>
     <script src="data/texture.js"></script>
     <script src="data/museums.js?v=20261027-schema"></script>
     <script src="data/periods.js"></script>
     <script src="data/artifacts.js?v=20261027-porcelain"></script>
-    <script src="js/app.js?v=20261027-porcelain"></script>
+    <script src="js/app.js?v=20261027-intro"></script>
   </body>
 </html>

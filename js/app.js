@@ -84,10 +84,13 @@
   globe.controls().addEventListener("change", syncGlobeInteractionState);
   syncGlobeInteractionState();
 
-  window.addEventListener("resize", () => {
+  // Globe.gl defaults to the window size; fit it to its own box now and on every resize.
+  function fitGlobe() {
     globe.width(el.globe.clientWidth);
     globe.height(el.globe.clientHeight);
-  });
+  }
+  fitGlobe();
+  window.addEventListener("resize", fitGlobe);
 
   // Records come from outside museum sites, so every value is escaped before it reaches innerHTML.
   function escapeHtml(value) {

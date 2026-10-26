@@ -15,7 +15,7 @@ Node.js는 수집·검증 도구에만 사용하며 사이트 실행 의존성�
 | 경로 | 책임 |
 | --- | --- |
 | `index.html` | 화면 구조, 컨트롤, 영어 About 모달의 정적 문구, 순서가 있는 스크립트 로드 |
-| `js/about.js` | About 모달 열기·닫기와 `#about` 직접 링크 처리; 지구본과 독립 |
+| `js/about.js` | 소개 창의 `소개`(한국어)·`About`(영어) 탭 전환, 열기·닫기, `#intro`·`#about` 직접 링크 처리; 지구본과 독립 |
 | `css/style.css` | 지구본·측면 패널 배치와 반응형 스타일 |
 | `vendor/globe.gl.min.js` | Globe.gl 2.46.1 번들, Three.js 기반 렌더링 포함 |
 | `data/texture.js` | `window.EARTH_TEXTURE`에 로컬 지구 텍스처 경로 지정 |

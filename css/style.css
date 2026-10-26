@@ -92,6 +92,11 @@ h1 {
   gap: 8px;
 }
 
+.topbar-links {
+  display: flex;
+  gap: 6px;
+}
+
 .about-link {
   flex: none;
   padding: 6px 12px;
@@ -144,12 +149,57 @@ h1 {
 
 .about-header h2 {
   margin-bottom: 0;
+  word-break: keep-all;
   font-size: 1.45rem;
+}
+
+.about-tabs {
+  display: flex;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.about-tab {
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfbfa;
+  color: var(--muted);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.about-tab[aria-selected="true"] {
+  border-color: var(--cn);
+  background: var(--cn);
+  color: #fff;
+}
+
+.about-tab:focus-visible {
+  outline: 2px solid rgba(33, 108, 122, 0.32);
+  outline-offset: 2px;
 }
 
 .about-body {
   padding: 6px 24px 22px;
   line-height: 1.6;
+}
+
+.about-body:lang(ko) {
+  word-break: keep-all;
+}
+
+.about-body ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+  color: #334155;
+}
+
+.about-body a {
+  color: var(--cn);
+  font-weight: 700;
 }
 
 .about-body h3 {

@@ -164,7 +164,7 @@ function centuryLabel(yearStart, yearEnd) {
 // Mixed decoration (blue with iron or copper red, enamels) and qingbai are left out on purpose.
 function wareFromText(text) {
   if (/철화|철채|진사|동화|상감|청채|동채|鐵畵|辰砂|彩|描金|塑贴|釉里红|青白|qingbai|iron|copper|famille|enamel|polychrome|overglaze|green glaze|celadon/i.test(text)) return null;
-  if (/청화|靑畵|靑華|青花|blue[- ]and[- ]white|underglaze (?:cobalt )?blue|cobalt blue/i.test(text)) return "blue-and-white";
+  if (/청화|靑畵|靑華|青花|blue[- ]and[- ]white|underglaze (?:cobalt[- ])?blue|cobalt[- ]blue/i.test(text)) return "blue-and-white";
   if (/백자|白磁|白瓷|甜白|白釉|white porcelain|white ware|blanc de chine/i.test(text)) return "white";
   return null;
 }
@@ -422,20 +422,36 @@ async function collectMet(perGroup) {
     const geo = culture === "KR" ? "Korea" : "China";
     const range = culture === "KR" ? [JOSEON.yearStart, 1910] : [MING.yearStart, QING.yearEnd];
     for (const ware of WARES) {
-      const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&geoLocation=${geo}&dateBegin=${range[0]}&dateEnd=${range[1]}&q=${encodeURIComponent(queries[ware])}`;
-      const result = await attempt("met", url, { as: "json" });
-      for (const objectId of (result?.objectIDs || []).slice(0, perGroup * 4)) {
+      // v1/search was retired on 2026-10-01; v1.1/search pages results with offset and limit.
+      const objectIds = [];
+      for (let offset = 0; offset < perGroup * 6; offset += 100) {
+        const url = `https://collectionapi.metmuseum.org/public/collection/v1.1/search?hasImages=true&geoLocation=${geo}&dateBegin=${range[0]}&dateEnd=${range[1]}&q=${encodeURIComponent(queries[ware])}&offset=${offset}&limit=100`;
+        const result = await attempt("met", url, { as: "json" });
+        const page = result?.objectIDs || [];
+        objectIds.push(...page);
+        if (page.length < 100) break;
+      }
+      for (const objectId of objectIds.slice(0, perGroup * 6)) {
         if (out.filter((item) => item.cultureRegion === culture && item.ware === ware && !item.excluded).length >= perGroup) break;
         const prefix = culture === "KR" ? "kr" : "cn";
         const id = `${prefix}-met-${objectId}`;
         if (out.some((item) => item.id === id)) continue;
-        await sleep(100);
+        // The object endpoint answers 403 to bursts; stay well under its rate limit.
+        await sleep(350);
         const record = await attempt("met", `https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectId}`, { as: "json" });
         if (!record) continue;
         const base = { id, name: record.title, source: record.objectURL };
-        const text = `${record.title} ${record.medium} ${record.classification}`;
+        const medium = record.medium || "";
+        const text = `${record.title} ${medium}`;
         const excluded = exclusionReason(text, record.objectBeginDate, record.objectEndDate);
-        const recordWare = wareFromText(text);
+        // The Met writes plain white porcelain as just "Porcelain" (optionally with carved or moulded decoration).
+        const plainWhite = /^porcelain(?: with (?:incised|molded|moulded|carved|relief|impressed|openwork)[^,;]*)?(?: \(jingdezhen ware\))?$/i.test(medium.trim())
+          && !/blue|red|green|yellow|enamel|gilt/i.test(record.title);
+        const recordWare = wareFromText(text) ?? (plainWhite ? "white" : null);
+        if (record.classification !== "Ceramics" || !/porcelain/i.test(medium)) {
+          out.push({ ...base, excluded: `not porcelain (${record.classification || "no classification"}: ${medium.slice(0, 40)})` });
+          continue;
+        }
         if (!record.isPublicDomain || !record.primaryImageSmall) {
           out.push({ ...base, excluded: "not public domain or no image" });
           continue;
@@ -459,7 +475,7 @@ async function collectMet(perGroup) {
           category: "ceramic",
           ware,
           material: record.medium || "Porcelain",
-          origin: culture === "KR" ? { ...ORIGINS.gwangju } : { ...ORIGINS.jingdezhenEstimate },
+          origin: culture === "KR" ? { ...ORIGINS.gwangju } : { ...(/jingdezhen/i.test(medium) ? ORIGINS.jingdezhenRecorded : ORIGINS.jingdezhenEstimate) },
           image: record.primaryImageSmall,
           imageLicense: "CC0 (The Met Open Access)",
           imageCredit: "The Metropolitan Museum of Art",
