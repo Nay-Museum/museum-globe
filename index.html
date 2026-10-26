@@ -136,12 +136,12 @@
       <div class="about-body" id="panelIntro" role="tabpanel" aria-labelledby="tabIntro" lang="ko" hidden>
         <p>
           동시대 유물 지구본은 한국과 중국에서 같은 시기에 만들어진 유물을 지구본 위에 나란히 놓고 비교하는 웹 지도입니다.
-          국립중앙박물관, 베이징 고궁박물원, 뉴욕 메트로폴리탄 미술관(The Met), 런던 빅토리아 앤드 앨버트 박물관(V&amp;A)의 소장품 1,228점을 담고 있습니다.
+          국립중앙박물관, 베이징 고궁박물원, 뉴욕 메트로폴리탄 미술관(The Met), 런던 빅토리아 앤드 앨버트 박물관(V&amp;A)의 소장품 892점을 담고 있습니다.
         </p>
 
         <h3>무엇을 볼 수 있나요</h3>
         <ul>
-          <li><b>12세기</b>: 고려청자와 송나라의 회화·도자 1,125점</li>
+          <li><b>12세기</b>: 고려청자와 송나라의 회화·도자 789점</li>
           <li><b>14~19세기</b>: 조선 백자·청화백자와 명·청 백자·청화 자기 103점. 같은 종류의 자기를 한국·중국의 박물관과 영국 V&amp;A, 미국 The Met 소장품으로 함께 볼 수 있습니다.</li>
         </ul>
 
@@ -155,7 +155,7 @@
 
         <h3>읽을 때 알아 둘 점</h3>
         <ul>
-          <li>상세 정보의 <b>연대 근거</b>는 연대가 박물관 기록에서 왔는지, 왕조 범위로 추정했는지, 비교를 위해 배치했는지를 알려 줍니다. 예를 들어 12세기 고려청자 중 1,045점은 세기 표기가 없어 비교용으로 12세기에 둔 것입니다.</li>
+          <li>상세 정보의 <b>연대 근거</b>는 연대가 박물관 기록에서 왔는지, 왕조 범위로 추정했는지, 비교를 위해 배치했는지를 알려 줍니다. 예를 들어 12세기 고려청자 중 710점은 세기 표기가 없어 비교용으로 12세기에 둔 것입니다.</li>
           <li>지도 위치는 대부분 시대·문화권별 <b>추정 위치</b>입니다. 박물관 기록에 가마가 적힌 38점만 그 가마에 놓았습니다. 같은 자리의 점을 흩어 놓은 모양에는 지리적 의미가 없습니다.</li>
           <li>모든 기록은 각 박물관의 공식 소장품 페이지로 연결됩니다. 데이터 출처와 한계는 <a href="#about" id="aboutFromIntro">About</a>(영문)에 자세히 적었습니다.</li>
         </ul>
@@ -172,9 +172,9 @@
       <div class="about-body" id="panelAbout" role="tabpanel" aria-labelledby="tabAbout" lang="en">
         <p>
           Museum Globe is a prototype web map that places Korean and Chinese objects of the same period side by side.
-          It holds 1,228 records from four museums: 1,088 from the National Museum of Korea, 77 from the
+          It holds 892 records from four museums: 753 from the National Museum of Korea, 76 from the
           Palace Museum, Beijing, 37 from The Metropolitan Museum of Art, New York, and 26 from the Victoria and
-          Albert Museum, London. The first 1,125 records form a 12th-century comparison of Goryeo celadon and Song
+          Albert Museum, London. The first 789 records form a 12th-century comparison of Goryeo celadon and Song
           works. A sample of 103 white and blue-and-white porcelains from the Joseon, Ming and Qing periods
           (14th–19th centuries) was added in October 2026.
         </p>
@@ -182,8 +182,8 @@
         <h3>Dates</h3>
         <p>
           Not every record carries an individual 12th-century date. 23 Korean records are dated to the 12th century
-          on the museum's page; the other 1,045 are Goryeo celadons whose pages give no century, placed in the
-          12th century for comparison. The 57 Chinese records are dated by dynasty (Northern Song, Southern Song or Song)
+          on the museum's page; the other 710 are Goryeo celadons whose pages give no century, placed in the
+          12th century for comparison. The 56 Chinese records are dated by dynasty (Northern Song, Southern Song or Song)
           and trimmed to the 12th century, so some may fall outside it.
         </p>
         <p>
@@ -209,7 +209,9 @@
           and source. The records are a selected sample gathered by a script, not a complete count of any collection.
           The 103 porcelains were chosen after review from 253 candidates, about ten per museum and ware, leaving out
           duplicates, fragments and pieces with other decoration. Only three white pieces at the V&amp;A from each
-          country met the criteria.
+          country met the criteria. In October 2026 a check of every record removed 332 celadon fragments (shards)
+          from the 12th-century set, along with four records whose image or source page was faulty, and restored
+          156 object names that had been cut short during collection.
         </p>
 
         <h3>Map positions</h3>
@@ -246,7 +248,7 @@
     <script src="data/texture.js"></script>
     <script src="data/museums.js?v=20261027-lang"></script>
     <script src="data/periods.js?v=20261027-lang"></script>
-    <script src="data/artifacts.js?v=20261027-met"></script>
+    <script src="data/artifacts.js?v=20261027-clean"></script>
     <script src="js/app.js?v=20261027-lang"></script>
   </body>
 </html>
