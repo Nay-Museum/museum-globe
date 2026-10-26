@@ -2,6 +2,8 @@
 
 한국과 중국의 박물관 소장품을 같은 세기에서 비교하는 정적 웹사이트 프로토타입입니다. 지구본의 점이나 목록을 선택하면 사진, 연대, 재질, 소장처, 공식 출처를 볼 수 있습니다. 현재 대상은 국립중앙박물관과 **중국 베이징 고궁박물원**입니다.
 
+공개 사이트: <https://nay-museum.github.io/museum-globe/> (소개: [`#about`](https://nay-museum.github.io/museum-globe/#about))
+
 장기 목표는 세계 주요 박물관으로 비교 범위를 넓히는 것입니다. 현재 구현은 두 박물관과 12세기 비교용 데이터에 집중되어 있습니다.
 
 ## 바로 실행하기
@@ -9,7 +11,7 @@
 필수: Python 3, WebGL을 지원하는 최신 브라우저. 빌드, npm 설치, 로그인, API 키, 데이터베이스는 필요하지 않습니다.
 
 ```bash
-git clone https://github.com/bbangjun360/museum-globe.git
+git clone https://github.com/Nay-Museum/museum-globe.git
 cd museum-globe
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
@@ -98,7 +100,7 @@ git diff -- data/artifacts.js
 
 | 설정 | Vercel | Netlify |
 | --- | --- | --- |
-| Git 저장소 | `bbangjun360/museum-globe` | `bbangjun360/museum-globe` |
+| Git 저장소 | `Nay-Museum/museum-globe` | `Nay-Museum/museum-globe` |
 | 프로젝트 루트 / Base directory | `.` (저장소 루트) | 비움 (저장소 루트) |
 | Framework preset | `Other` | 별도 프레임워크 없음 |
 | Build command | Override를 켜고 빈 값 | 비움 |

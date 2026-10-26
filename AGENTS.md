@@ -39,6 +39,7 @@ node scripts/check.mjs
 - 데이터 문자열을 `innerHTML`에 넣는 기존 구간이 있다. 새 외부 입력에는 텍스트 노드·속성 API와 URL 검증을 사용한다.
 - `vendor/`의 압축 번들을 직접 편집하지 않는다. 갱신한다면 버전과 원본을 기록한다.
 - 앱/데이터/CSS를 바꾸면 `index.html`의 해당 `?v=`를 갱신한다. 관련 문서도 함께 맞춘다.
+- 공개 주소 `https://nay-museum.github.io/museum-globe/`(특히 `#about`)는 CV에 실린 고정 링크다. 조직 이름(`Nay-Museum`)·저장소 이름(`museum-globe`) 변경, 저장소 이전·삭제, Pages 비활성화, `#about` 동작 제거를 하지 않는다.
 - 사용자 변경을 되돌리지 않고, 비밀키·토큰·`.env`·개인 설정을 커밋하지 않는다.
 
 ## 데이터 관련 함정
